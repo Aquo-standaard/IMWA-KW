@@ -1,7 +1,7 @@
 var respecConfig = {
   specStatus: "GN-WV",
   specType: "IM",
-  //subtitle: "IMWA Kunstwerken",
+  //subtitle: "IMWA Kunstwerken Gegevenscatalogus",
    //publishDate: "2023-04-26", 
   logos: [
   {src: 'https://www.aquo.nl//logos/aquo_logo.svg',
