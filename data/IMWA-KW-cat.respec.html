@@ -32,7 +32,7 @@
       </section>
       <section id="sotd">
          <p>
-            Deze documentatie van het conceptueel model is laatst bijgewerkt op November 1, 2023 at 11:20:59.
+            Deze documentatie van het conceptueel model is laatst bijgewerkt op November 7, 2023 at 15:54:57.
             </p>
       </section>
       <section id="prologue" class="informative" level="1">
@@ -44,7 +44,7 @@
       <section id="cat" class="normative">
          <h2>Gegevensdefinitie</h2>
          <p><b>Deze tekst is normatief.</b>
-            <!--SIM-IMWA2024Kunstwerken-22.1-1-20231026-20231101-112038 imvertor Nightly-build.11--></p>
+            <!--SIM-IMWA2024Kunstwerken-22.1-1-20231026-20231107-155438 imvertor Nightly-build.13--></p>
          <section id="global_package_KunstwerkenConstructies">
             <h3>Domein   Kunstwerken &amp; Constructies</h3>
             <section>
@@ -118,11 +118,11 @@
                         </tr>
                         <tr>
                            <td>
-                              <a class="link" href="#detail_attribute_KunstwerkenConstructies_Kunstwerk_aantalDoorstroomOpeningen">aantal­Doorstroom­Openingen</a>
+                              <a class="link" href="#detail_attribute_KunstwerkenConstructies_Kunstwerk_aantalDoorstroomopeningen">aantal­Doorstroomopeningen</a>
                               </td>
                            <td>
                               
-                              <p>Aantal doorstroomopeningen in het kunstwerk.</p>
+                              <p>specificeert hoeveel doorvaartopeningen een kunstwerk bevat</p>
                               </td>
                            <td>
                               DECIMAL
@@ -131,15 +131,14 @@
                         </tr>
                         <tr>
                            <td>
-                              <a class="link" href="#detail_attribute_KunstwerkenConstructies_Kunstwerk_geografischeOrientatie">geografische­Orientatie</a>
+                              <a class="link" href="#detail_attribute_KunstwerkenConstructies_Kunstwerk_aantalDoorvaartopeningen">aantal­Doorvaartopeningen</a>
                               </td>
                            <td>
                               
-                              <p>Richting in graden van de ligging van het object t.o.v. het noorden. Te gebruiken
-                                 voor het aangeven van de geografische oriëntatie van het object op de kaart.</p>
+                              <p>specificeert hoeveel doorvaartopeningen een kunstwerk bevat</p>
                               </td>
                            <td>
-                              Measure
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Decimal</a>
                               </td>
                            <td>0 .. 1</td>
                         </tr>
@@ -149,7 +148,7 @@
                               </td>
                            <td>
                               
-                              <p>Geometrische representatie van het object.</p>
+                              <p>specificeert de geometrie van een object in een punt, lijn of vlak</p>
                               </td>
                            <td>
                               GM_Object
@@ -162,7 +161,7 @@
                               </td>
                            <td>
                               
-                              <p>Definitie aan te maken</p>
+                              <p>specificeert of een een kunstwerk regelbaar is</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_J_of_N">J_of_N</a>
@@ -175,7 +174,7 @@
                               </td>
                            <td>
                               
-                              <p>De naam van een kunstwerk</p>
+                              <p>specificeert de naam waaronder een object bekend staat</p>
                               </td>
                            <td>
                               <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
@@ -188,7 +187,7 @@
                               </td>
                            <td>
                               
-                              <p>Definitie aan te maken</p>
+                              <p>nader specificeert welke status een kunstwerk heeft binnen de legger van een Waterschap</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_LeggerStatus">Legger­Status</a>
@@ -201,7 +200,7 @@
                               :</td>
                            <td>
                               
-                              <p>definitie aan te maken</p>
+                              <p>verwijst naar de gegevensgroep Afmeting­Constructie</p>
                               </td>
                            <td>
                               <a class="link" href="#detail_class_KunstwerkenConstructies_AfmetingConstructie">Afmeting­Constructie</a>
@@ -511,7 +510,7 @@
                            <td>
                               
                               <p>een waterstaatkundig kunstwerk waarmee een te groot verschil in bodemhoogte wordt
-                                 gecompenseerd, zodat de stroomsnelheid van water wordt verminderd </p>
+                                 gecompenseerd, zodat de stroomsnelheid van oppervlaktewater wordt verminderd </p>
                               </td>
                         </tr>
                         <tr>
@@ -561,9 +560,7 @@
                               </td>
                            <td>
                               
-                              <p>de maatgevende bodemhoogte van het object aan de benedenstroomse zijde
-                                 Aquo-woordenboek: hoogteligging van de bodem van een oppervlaktewater ten opzichte
-                                 van een referentievlak </p>
+                              <p>specificeert de bodemhoogte van de bodemval bendenstrooms</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_KunstwerkenConstructies_VerticaleReferentie">Verticale­Referentie</a>
@@ -576,9 +573,7 @@
                               </td>
                            <td>
                               
-                              <p>de maatgevende bodemhoogte van het object aan de bovenstroomse zijde
-                                 Aquo-woordenboek: hoogteligging van de bodem van een oppervlaktewater ten opzichte
-                                 van een referentievlak</p>
+                              <p>specificeert de bodemhoogte van de bodemval bovenstrooms</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_KunstwerkenConstructies_VerticaleReferentie">Verticale­Referentie</a>
@@ -699,7 +694,7 @@
                               </td>
                            <td>
                               
-                              <p>een attribuut voor het aangeven van de sponningbreedte van een coupure</p>
+                              <p>specificeert de breedte van de sponning van een coupure</p>
                               </td>
                            <td>
                               Measure
@@ -712,7 +707,7 @@
                               </td>
                            <td>
                               
-                              <p>een attribuut voor het aangeven van de diepte van de sponning van een coupure</p>
+                              <p>specificeert de diepte van de sponning van een coupure</p>
                               </td>
                            <td>
                               Measure
@@ -723,7 +718,10 @@
                            <td>
                               <a class="link" href="#detail_attribute_KunstwerkenConstructies_Coupure_drempelhoogte">drempelhoogte</a>
                               </td>
-                           <td></td>
+                           <td>
+                              
+                              <p>specificeert de hoogte van de fysieke drempel in een kunstwerk</p>
+                              </td>
                            <td>
                               <a class="link" href="#global_class_KunstwerkenConstructies_VerticaleReferentie">Verticale­Referentie</a>
                               </td>
@@ -792,8 +790,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>een waterstaatkundig kunstwerk dat door middel van een pomp of vijzel water van een
-                                 lager niveau naar een hoger niveau brengt en daarmee het waterpeil reguleert</p>
+                              <p>een waterstaatkundig kunstwerk dat door middel van een pomp of vijzel oppervlaktewater
+                                 van een lager niveau naar een hoger niveau brengt en daarmee het waterpeil reguleert</p>
                               </td>
                         </tr>
                         <tr>
@@ -843,9 +841,7 @@
                               </td>
                            <td>
                               
-                              <p>een attribuut voor de nadere aanduiding van het type bemaling
-                                 Aquo:woordenboek: het verwijderen van overtollig water door middel van een gemaal
-                                 </p>
+                              <p>nader specificeert het type bemaling</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_BemalingType">Bemaling­Type</a>
@@ -858,7 +854,7 @@
                               </td>
                            <td>
                               
-                              <p> een nadere aanduiding van het type gemaal</p>
+                              <p>nader specificeert het type gemaal</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_GemaalType">Gemaal­Type</a>
@@ -931,7 +927,7 @@
                            <td>
                               
                               <p>een waterstaatkundig kunstwerk voorzien van één of meerdere afsluitmiddelen, waarmee
-                                 de verbinding tussen twee wateren gereguleerd kan worden </p>
+                                 de verbinding tussen twee oppervlaktewateren gereguleerd kan worden </p>
                               </td>
                         </tr>
                         <tr>
@@ -977,11 +973,21 @@
                         </tr>
                         <tr>
                            <td>
+                              <a class="link" href="#detail_attribute_KunstwerkenConstructies_Sluis_drempelhoogte">drempelhoogte</a>
+                              </td>
+                           <td></td>
+                           <td>
+                              <a class="link" href="#global_class_KunstwerkenConstructies_VerticaleReferentie">Verticale­Referentie</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
                               <a class="link" href="#detail_attribute_KunstwerkenConstructies_Sluis_typeSluis">type­Sluis</a>
                               </td>
                            <td>
                               
-                              <p>een nadere aanduiding van het type sluis</p>
+                              <p>nader specificeert het type sluis</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_SluisType">Sluis­Type</a>
@@ -1189,11 +1195,21 @@
                         </tr>
                         <tr>
                            <td>
+                              <a class="link" href="#detail_attribute_KunstwerkenConstructies_Stuw_drempelhoogte">drempelhoogte</a>
+                              </td>
+                           <td></td>
+                           <td>
+                              <a class="link" href="#global_class_KunstwerkenConstructies_VerticaleReferentie">Verticale­Referentie</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
                               <a class="link" href="#detail_attribute_KunstwerkenConstructies_Stuw_typeStuw">type­Stuw</a>
                               </td>
                            <td>
                               
-                              <p>een attribuut voor de nadere aanduiding van het type stuw</p>
+                              <p>nader specificeert het type stuw</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_StuwType">Stuw­Type</a>
@@ -1312,7 +1328,7 @@
                               </td>
                            <td>
                               
-                              <p>een attribuut voor de nadere aanduiding van het type verbeterinstallatie</p>
+                              <p>nader specificeert het type verbeterinstallatie</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_VerbeterinstallatieType">Verbeterinstallatie­Type</a>
@@ -1425,7 +1441,7 @@
                               </td>
                            <td>
                               
-                              <p>een attribuut voor de nadere aanduiding van type vispassage</p>
+                              <p>nader specificeert het type vispassage</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_VispassageType">Vispassage­Type</a>
@@ -1575,8 +1591,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>een waterstaatkundig kunstwerk waarmee vuil in water wordt opgevangen om de waterkwaliteit
-                                 te verbeteren en/of om een ander object benedenstrooms vrij te houden van vuil</p>
+                              <p>nader specificeert het type vuilvang</p>
                               </td>
                         </tr>
                         <tr>
@@ -1669,7 +1684,7 @@
                   <section class="notoc">
                      <h6>Toelichting  </h6>
                      
-                     <p>Het kan hier gaan om allerlei soorten vervuiling zoals plastic en planten.</p>
+                     <p>Hier is de domeintabel Vuilvang­Type van toepassing.</p>
                      </section>
                   </section>
                
@@ -1694,8 +1709,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>een waterstaatkundig kunstwerk waarmee in het water meegevoerd zand en andere fijne
-                                 vaste deeltjes gereguleerd neerslaan door de stroomsnelheid van water te beinvloeden</p>
+                              <p>een waterstaatkundig kunstwerk waarmee in oppervlaktewater meegevoerd zand en andere
+                                 fijne vaste deeltjes gereguleerd neerslaan door de stroomsnelheid van water te beinvloeden</p>
                               </td>
                         </tr>
                         <tr>
@@ -1873,7 +1888,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>een overbrugging die er voor zorgt dat water vrij kan doorstromen</p>
+                              <p>een overbrugging die er voor zorgt dat oppervlaktewater vrij kan doorstromen</p>
                               </td>
                         </tr>
                         <tr>
@@ -2059,7 +2074,8 @@
                               </td>
                            <td>
                               
-                              <p>de maatgevende hoogte van de onderzijde van de brugdekconstructie</p>
+                              <p>specificeert de hoogte van de onderzijde van een brug, zodat de doorvaart hoogte kan
+                                 worden bepaald</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_KunstwerkenConstructies_VerticaleReferentie">Verticale­Referentie</a>
@@ -2072,7 +2088,7 @@
                               </td>
                            <td>
                               
-                              <p>nadere aanduiding van het type brug</p>
+                              <p>nader specificeert het type brug</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_BrugType">Brug­Type</a>
@@ -2321,8 +2337,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>een ondertunneling die door middel van een koker twee wederzijds gelegen wateren met
-                                 elkaar verbindt</p>
+                              <p>een ondertunneling die door middel van een koker twee wederzijds gelegen oppervlaktewateren
+                                 met elkaar verbindt</p>
                               </td>
                         </tr>
                         <tr>
@@ -2372,7 +2388,7 @@
                               </td>
                            <td>
                               
-                              <p>Diameter van de Drainagebuis. </p>
+                              <p>specificeert wat de diameter is van de koker van een ondertunneling </p>
                               </td>
                            <td>
                               Measure
@@ -2413,7 +2429,7 @@
                               </td>
                            <td>
                               
-                              <p>Materiaal van de Drainagebuis.</p>
+                              <p>nader specificeert uit welk materiaal de koker van een ondertunneling bestaat</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_Materialen_voor_leidingen">Materialen_voor_leidingen</a>
@@ -2482,7 +2498,7 @@
                            <td>
                               
                               <p>een ondertunneling die door middel van een koker met een verhoogd middengedeelte twee
-                                 wederzijds gelegen wateren met elkaar verbindt</p>
+                                 wederzijds gelegen oppervlaktewateren met elkaar verbindt </p>
                               </td>
                         </tr>
                         <tr>
@@ -2532,7 +2548,7 @@
                               </td>
                            <td>
                               
-                              <p>Diameter van de Drainagebuis. </p>
+                              <p>specificeert wat de diameter is van de koker van een ondertunneling</p>
                               </td>
                            <td>
                               Measure
@@ -2618,8 +2634,8 @@
                      
                      <p>Het verhoogde middengedeelte gaat in de regel over een waterkering of een (stroom)scheiding
                         heen. De constructie laat toe dat het water zich volgens de wet van de communicerende
-                        vaten laat verplaatsen tussen wederzijds gelegen wateren. Dit wordt in gang gezet
-                        met een vacuümpomp.</p>
+                        vaten laat verplaatsen tussen wederzijds gelegen oppervlaktewateren. Dit wordt in
+                        gang gezet met een vacuümpomp.</p>
                      </section>
                   </section>
                
@@ -2645,7 +2661,7 @@
                            <td>
                               
                               <p>een ondertunneling die door middel van een koker met een verhoogd verlaagd middengedeelte
-                                 twee wederzijds gelegen wateren met elkaar verbindt</p>
+                                 twee wederzijds gelegen oppervlaktewateren met elkaar verbindt</p>
                               </td>
                         </tr>
                         <tr>
@@ -2695,7 +2711,7 @@
                               </td>
                            <td>
                               
-                              <p>Diameter van de Drainagebuis. </p>
+                              <p>specificeert wat de diameter is van de koker van een ondertunneling </p>
                               </td>
                            <td>
                               Measure
@@ -2782,7 +2798,8 @@
                      <p>Sifons worden aangelegd als een gebied met eenzelfde peil wordt doorsneden door een
                         watergang met een ander, afwijkend peil. Ook worden dit soort constructies gemaakt
                         om het water van de ene waterloop in het gebied vast te houden, bijvoorbeeld als het
-                        water van een beek van een betere samenstelling is dan het water van een kanaal.</p>
+                        oppervlaktewater van een beek van een betere samenstelling is dan het water van een
+                        kanaal.</p>
                      </section>
                   </section>
                
@@ -2936,25 +2953,11 @@
                         </tr>
                         <tr>
                            <td>
-                              <a class="link" href="#detail_attribute_KunstwerkenConstructies_WaterstaatkundigeConstructie_geografischeOrientatie">geografische­Orientatie</a>
-                              </td>
-                           <td>
-                              
-                              <p>Richting in graden van de ligging van het object t.o.v. het noorden. Te gebruiken
-                                 voor het aangeven van de geografische oriëntatie van het object op de kaart.</p>
-                              </td>
-                           <td>
-                              Measure
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>
                               <a class="link" href="#detail_attribute_KunstwerkenConstructies_WaterstaatkundigeConstructie_geometrie">geometrie</a>
                               </td>
                            <td>
                               
-                              <p>Geometrische representatie van het object.</p>
+                              <p>specificeert de geometrie van een object in een punt, vlak of lijn</p>
                               </td>
                            <td>
                               GM_Object
@@ -2967,7 +2970,7 @@
                               </td>
                            <td>
                               
-                              <p>De naam van een kunstwerk</p>
+                              <p>specificeert de naam waaronder een object bekend staat</p>
                               </td>
                            <td>
                               <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
@@ -2980,7 +2983,8 @@
                               </td>
                            <td>
                               
-                              <p>Definitie aan te maken</p>
+                              <p>nader specificeert welke status een waterstaatkundige constructie heeft binnen de
+                                 legger van een Waterschap</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_LeggerStatus">Legger­Status</a>
@@ -2993,7 +2997,7 @@
                               :</td>
                            <td>
                               
-                              <p>definitie aan te maken</p>
+                              <p>verwijst naar de gegevensgroep Afmeting­Constructie</p>
                               </td>
                            <td>
                               <a class="link" href="#detail_class_KunstwerkenConstructies_AfmetingConstructie">Afmeting­Constructie</a>
@@ -3085,7 +3089,7 @@
                               Waterstaatkundige­Constructie
                               [ 1 .. * ]
                               
-                              <a class="link" href="#detail_association_KunstwerkenConstructies_WaterstaatkundigeConstructie_Waterstaatkindigconstructieelement">is­Onderdeel­Van: Waterstaatkindigconstructieelement</a>
+                              <a class="link" href="#detail_association_KunstwerkenConstructies_WaterstaatkundigeConstructie_Waterstaatkundigconstructieelement">is­Onderdeel­Van: Waterstaatkundigconstructieelement</a>
                               
                               
                               <a class="link" href="#global_class_ConstructieElement_WaterstaatkundigConstructieElement">Waterstaatkundig­Constructie­Element</a>
@@ -3307,7 +3311,7 @@
                               </td>
                            <td>
                               
-                              <p>een attribuut voor de nadere aanduiding van het type dam</p>
+                              <p>nader specificeert het type dam</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_DamType">Dam­Type</a>
@@ -3425,7 +3429,10 @@
                            <td>
                               <a class="link" href="#detail_attribute_KunstwerkenConstructies_Dijk_typeDijk">type­Dijk</a>
                               </td>
-                           <td></td>
+                           <td>
+                              
+                              <p>nader specificeert het type dijk</p>
+                              </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_DijkType">Dijk­Type</a>
                               </td>
@@ -3542,7 +3549,10 @@
                            <td>
                               <a class="link" href="#detail_attribute_KunstwerkenConstructies_Golfbreker_typeGolfbreker">type­Golfbreker</a>
                               </td>
-                           <td></td>
+                           <td>
+                              
+                              <p>nader specificeert het type golfbreker</p>
+                              </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_GolfbrekerType">Golfbreker­Type</a>
                               </td>
@@ -3661,7 +3671,7 @@
                               </td>
                            <td>
                               
-                              <p>Nadere aanduiding van het type oververdediging.</p>
+                              <p>nader specificeert het type oeverbekleding</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_OeverbekledingType">Oeverbekleding­Type</a>
@@ -3886,7 +3896,7 @@
                               </td>
                            <td>
                               
-                              <p>een attribuut voor de nadere aanduiding van het type wandconstructie</p>
+                              <p>nader specificeert het type wandconstructie</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_Wandconstructie_soort">Wandconstructie_soort</a>
@@ -3997,7 +4007,10 @@
                            <td>
                               <a class="link" href="#detail_attribute_KunstwerkenConstructies_Waterbodemconstructie_typeWaterbodemconstructie">type­Waterbodemconstructie</a>
                               </td>
-                           <td></td>
+                           <td>
+                              
+                              <p>nader specificeert het type waterbodemconstructie</p>
+                              </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_WaterbodemconstructieType">Waterbodemconstructie­Type</a>
                               </td>
@@ -4184,7 +4197,7 @@
                            <td>
                               
                               <p>een waterverplaatsingsruimte dat onderdeel is van een kunstwerk en dient om de doorstroom
-                                 van water faciliteren</p>
+                                 van oppervlaktewater te faciliteren</p>
                               </td>
                         </tr>
                         <tr>
@@ -4234,7 +4247,8 @@
                               </td>
                            <td>
                               
-                              <p>Filter aanwezig (J/N) aan de uittredezijde van het kunstwerk waarin uitstroming plaatsvindt.</p>
+                              <p>specificeert of bovenstrooms een filter aanwezig is in een doorstroomopening van een
+                                 kunstwerk</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_J_of_N">J_of_N</a>
@@ -4247,7 +4261,8 @@
                               </td>
                            <td>
                               
-                              <p>Filter aanwezig (J/N) aan de uittredezijde van het kunstwerk waarin uitstroming plaatsvindt.</p>
+                              <p>specificeert of benedenstrooms een filter aanwezig is in een doorstroomopening van
+                                 een kunstwerk</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_J_of_N">J_of_N</a>
@@ -4260,8 +4275,7 @@
                               </td>
                            <td>
                               
-                              <p>Coëfficiënt die bij de berekening van de afvoer over en door kunstwerken de gevolgen
-                                 van onvolkomenheden in de schematisatie van de waterbeweging compenseert</p>
+                              <p>specificeert wat het afvoer coefficient is van een doorstroomopening in een kustwerk</p>
                               </td>
                            <td>
                               Measure
@@ -4274,7 +4288,7 @@
                               :</td>
                            <td>
                               
-                              <p>nadere aanduiding van de afmeting van een doorstroomopening</p>
+                              <p>verwijst naar de gegevensgroep afmeting­Doorstroom­Opening</p>
                               </td>
                            <td>
                               <a class="link" href="#detail_class_KunstwerkenConstructies_AfmetingDoorstroomopening">Afmeting­Doorstroomopening</a>
@@ -4441,7 +4455,10 @@
                            <td>
                               <a class="link" href="#detail_attribute_KunstwerkenConstructies_Doorvaartopening_afmetingDoorstroomOpening">afmeting­Doorstroom­Opening</a>
                               :</td>
-                           <td></td>
+                           <td>
+                              
+                              <p>verwijst naar de gegevensgroep afmeting­Doorvaart­Opening</p>
+                              </td>
                            <td>
                               <a class="link" href="#detail_class_KunstwerkenConstructies_AfmetingDoorvaartOpening">Afmeting­Doorvaart­Opening</a>
                               </td>
@@ -4883,7 +4900,7 @@
                                  </td>
                               <td></td>
                               <td>
-                                 <a class="link" href="#global_class_CodelijstenAquoDS_Hoedanigheid">Hoedanigheid</a>
+                                 <a class="link" href="#global_class_KunstwerkenConstructies_VerticaleReferentie">Verticale­Referentie</a>
                                  </td>
                               <td>1</td>
                            </tr>
@@ -4901,8 +4918,8 @@
                   <section id="detail_class_KunstwerkenConstructies_Kunstwerk">
                      <h6>   Kunstwerk</h6>
                      
-                     <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Kunstwerk_aantalDoorstroomOpeningen">
-                        <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_Kunstwerk">Kunstwerk</a> aantal­Doorstroom­Openingen</h7>
+                     <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Kunstwerk_aantalDoorstroomopeningen">
+                        <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_Kunstwerk">Kunstwerk</a> aantal­Doorstroomopeningen</h7>
                         
                         <table style="width: 100%;">
                            <colgroup style="width: 30%;"></colgroup>
@@ -4910,7 +4927,7 @@
                            <tbody>
                               <tr>
                                  <th>Naam</th>
-                                 <td>aantal­Doorstroom­Openingen</td>
+                                 <td>aantal­Doorstroomopeningen</td>
                               </tr>
                               <tr>
                                  <th>Herkomst</th>
@@ -4922,7 +4939,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Aantal doorstroomopeningen in het kunstwerk.</p>
+                                    <p>specificeert hoeveel doorvaartopeningen een kunstwerk bevat</p>
                                     </td>
                               </tr>
                               <tr>
@@ -4977,6 +4994,82 @@
                         </table>
                         </div>
                      
+                     <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Kunstwerk_aantalDoorvaartopeningen">
+                        <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_Kunstwerk">Kunstwerk</a> aantal­Doorvaartopeningen</h7>
+                        
+                        <table style="width: 100%;">
+                           <colgroup style="width: 30%;"></colgroup>
+                           <colgroup style="width: 70%;"></colgroup>
+                           <tbody>
+                              <tr>
+                                 <th>Naam</th>
+                                 <td>aantal­Doorvaartopeningen</td>
+                              </tr>
+                              <tr>
+                                 <th>Herkomst</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Definitie</th>
+                                 <td>
+                                    
+                                    <p>specificeert hoeveel doorvaartopeningen een kunstwerk bevat</p>
+                                    </td>
+                              </tr>
+                              <tr>
+                                 <th>Herkomst definitie</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Datum opname</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Mogelijk geen waarde</th>
+                                 <td>Nee</td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie in onderzoek</th>
+                                 <td>Nee</td>
+                              </tr>
+                              <tr>
+                                 <th>Aanduiding strijdigheid/nietigheid</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie kardinaliteit</th>
+                                 <td>0 .. 1</td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie authentiek</th>
+                                 <td>Authentiek</td>
+                              </tr>
+                              <tr>
+                                 <th>Regels</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Formaat</th>
+                                 <td>
+                                    <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Decimal</a>
+                                    </td>
+                              </tr>
+                              <tr>
+                                 <th>Patroon</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie afleidbaar</th>
+                                 <td>Zie package</td>
+                              </tr>
+                              <tr>
+                                 <th>Waarde afleidbaar</th>
+                                 <td>Nee</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     
                      <div class="notoc" id="detail_attribute_KunstwerkenConstructies_Kunstwerk_afmetingConstructie">
                         <h7>Gegevensgroep  <a href="#global_class_KunstwerkenConstructies_Kunstwerk">Kunstwerk</a> afmeting­Constructie</h7>
                         
@@ -4999,7 +5092,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>definitie aan te maken</p>
+                                    <p>verwijst naar de gegevensgroep Afmeting­Constructie</p>
                                     </td>
                               </tr>
                               <tr>
@@ -5364,85 +5457,6 @@
                            </div>
                         </div>
                      
-                     <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Kunstwerk_geografischeOrientatie">
-                        <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_Kunstwerk">Kunstwerk</a> geografische­Orientatie</h7>
-                        
-                        <table style="width: 100%;">
-                           <colgroup style="width: 30%;"></colgroup>
-                           <colgroup style="width: 70%;"></colgroup>
-                           <tbody>
-                              <tr>
-                                 <th>Naam</th>
-                                 <td>geografische­Orientatie</td>
-                              </tr>
-                              <tr>
-                                 <th>Herkomst</th>
-                                 <td>
-                                    <a href="https://aquo.nl/index.php/Begrip aan te maken" target="_blank">https://aquo.nl/index.php/Begrip aan te maken</a>
-                                    </td>
-                              </tr>
-                              <tr>
-                                 <th>Definitie</th>
-                                 <td>
-                                    
-                                    <p>Richting in graden van de ligging van het object t.o.v. het noorden. Te gebruiken
-                                       voor het aangeven van de geografische oriëntatie van het object op de kaart.</p>
-                                    </td>
-                              </tr>
-                              <tr>
-                                 <th>Herkomst definitie</th>
-                                 <td>Aquo</td>
-                              </tr>
-                              <tr>
-                                 <th>Datum opname</th>
-                                 <td> </td>
-                              </tr>
-                              <tr>
-                                 <th>Mogelijk geen waarde</th>
-                                 <td>Nee</td>
-                              </tr>
-                              <tr>
-                                 <th>Indicatie in onderzoek</th>
-                                 <td>Nee</td>
-                              </tr>
-                              <tr>
-                                 <th>Aanduiding strijdigheid/nietigheid</th>
-                                 <td> </td>
-                              </tr>
-                              <tr>
-                                 <th>Indicatie kardinaliteit</th>
-                                 <td>0 .. 1</td>
-                              </tr>
-                              <tr>
-                                 <th>Indicatie authentiek</th>
-                                 <td>Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <th>Regels</th>
-                                 <td> </td>
-                              </tr>
-                              <tr>
-                                 <th>Formaat</th>
-                                 <td>
-                                    Measure
-                                    </td>
-                              </tr>
-                              <tr>
-                                 <th>Patroon</th>
-                                 <td> </td>
-                              </tr>
-                              <tr>
-                                 <th>Indicatie afleidbaar</th>
-                                 <td>Zie package</td>
-                              </tr>
-                              <tr>
-                                 <th>Waarde afleidbaar</th>
-                                 <td>Nee</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                        </div>
-                     
                      <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Kunstwerk_geometrie">
                         <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_Kunstwerk">Kunstwerk</a> geometrie</h7>
                         
@@ -5464,7 +5478,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Geometrische representatie van het object.</p>
+                                    <p>specificeert de geometrie van een object in een punt, lijn of vlak</p>
                                     </td>
                               </tr>
                               <tr>
@@ -5542,7 +5556,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Definitie aan te maken</p>
+                                    <p>specificeert of een een kunstwerk regelbaar is</p>
                                     </td>
                               </tr>
                               <tr>
@@ -5620,7 +5634,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>De naam van een kunstwerk</p>
+                                    <p>specificeert de naam waaronder een object bekend staat</p>
                                     </td>
                               </tr>
                               <tr>
@@ -5698,7 +5712,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Definitie aan te maken</p>
+                                    <p>nader specificeert welke status een kunstwerk heeft binnen de legger van een Waterschap</p>
                                     </td>
                               </tr>
                               <tr>
@@ -5753,6 +5767,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Legger­Status van toepassing.</p>
+                           </div>
                         </div>
                      
                      <div class="deepheader" id="detail_association_KunstwerkenConstructies_Kunstwerk_kunstwerkcomplex">
@@ -5969,9 +5989,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>de maatgevende bodemhoogte van het object aan de benedenstroomse zijde
-                                       Aquo-woordenboek: hoogteligging van de bodem van een oppervlaktewater ten opzichte
-                                       van een referentievlak </p>
+                                    <p>specificeert de bodemhoogte van de bodemval bendenstrooms</p>
                                     </td>
                               </tr>
                               <tr>
@@ -6049,9 +6067,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>de maatgevende bodemhoogte van het object aan de bovenstroomse zijde
-                                       Aquo-woordenboek: hoogteligging van de bodem van een oppervlaktewater ten opzichte
-                                       van een referentievlak</p>
+                                    <p>specificeert de bodemhoogte van de bodemval bovenstrooms</p>
                                     </td>
                               </tr>
                               <tr>
@@ -6133,7 +6149,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>een attribuut voor het aangeven van de sponningbreedte van een coupure</p>
+                                    <p>specificeert de breedte van de sponning van een coupure</p>
                                     </td>
                               </tr>
                               <tr>
@@ -6211,7 +6227,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>een attribuut voor het aangeven van de diepte van de sponning van een coupure</p>
+                                    <p>specificeert de diepte van de sponning van een coupure</p>
                                     </td>
                               </tr>
                               <tr>
@@ -6285,7 +6301,10 @@
                               </tr>
                               <tr>
                                  <th>Definitie</th>
-                                 <td> </td>
+                                 <td>
+                                    
+                                    <p>specificeert de hoogte van de fysieke drempel in een kunstwerk</p>
+                                    </td>
                               </tr>
                               <tr>
                                  <th>Herkomst definitie</th>
@@ -6366,9 +6385,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>een attribuut voor de nadere aanduiding van het type bemaling
-                                       Aquo:woordenboek: het verwijderen van overtollig water door middel van een gemaal
-                                       </p>
+                                    <p>nader specificeert het type bemaling</p>
                                     </td>
                               </tr>
                               <tr>
@@ -6423,6 +6440,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Bemaling­Type van toepassing.</p>
+                           </div>
                         </div>
                      
                      <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Gemaal_typeGemaal">
@@ -6446,7 +6469,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p> een nadere aanduiding van het type gemaal</p>
+                                    <p>nader specificeert het type gemaal</p>
                                     </td>
                               </tr>
                               <tr>
@@ -6501,11 +6524,90 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Gemaal­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
                   <section id="detail_class_KunstwerkenConstructies_Sluis">
                      <h6>   Sluis</h6>
+                     
+                     <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Sluis_drempelhoogte">
+                        <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_Sluis">Sluis</a> drempelhoogte</h7>
+                        
+                        <table style="width: 100%;">
+                           <colgroup style="width: 30%;"></colgroup>
+                           <colgroup style="width: 70%;"></colgroup>
+                           <tbody>
+                              <tr>
+                                 <th>Naam</th>
+                                 <td>drempelhoogte</td>
+                              </tr>
+                              <tr>
+                                 <th>Herkomst</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Definitie</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Herkomst definitie</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Datum opname</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Mogelijk geen waarde</th>
+                                 <td>Nee</td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie in onderzoek</th>
+                                 <td>Nee</td>
+                              </tr>
+                              <tr>
+                                 <th>Aanduiding strijdigheid/nietigheid</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie kardinaliteit</th>
+                                 <td>1</td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie authentiek</th>
+                                 <td>Authentiek</td>
+                              </tr>
+                              <tr>
+                                 <th>Regels</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Formaat</th>
+                                 <td>
+                                    <a class="link" href="#detail_class_KunstwerkenConstructies_VerticaleReferentie">Verticale­Referentie</a>
+                                    </td>
+                              </tr>
+                              <tr>
+                                 <th>Patroon</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie afleidbaar</th>
+                                 <td>Zie package</td>
+                              </tr>
+                              <tr>
+                                 <th>Waarde afleidbaar</th>
+                                 <td>Nee</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
                      
                      <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Sluis_typeSluis">
                         <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_Sluis">Sluis</a> type­Sluis</h7>
@@ -6528,7 +6630,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>een nadere aanduiding van het type sluis</p>
+                                    <p>nader specificeert het type sluis</p>
                                     </td>
                               </tr>
                               <tr>
@@ -6583,12 +6685,91 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Sluis­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
                   
                   <section id="detail_class_KunstwerkenConstructies_Stuw">
                      <h6>   Stuw</h6>
+                     
+                     <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Stuw_drempelhoogte">
+                        <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_Stuw">Stuw</a> drempelhoogte</h7>
+                        
+                        <table style="width: 100%;">
+                           <colgroup style="width: 30%;"></colgroup>
+                           <colgroup style="width: 70%;"></colgroup>
+                           <tbody>
+                              <tr>
+                                 <th>Naam</th>
+                                 <td>drempelhoogte</td>
+                              </tr>
+                              <tr>
+                                 <th>Herkomst</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Definitie</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Herkomst definitie</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Datum opname</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Mogelijk geen waarde</th>
+                                 <td>Nee</td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie in onderzoek</th>
+                                 <td>Nee</td>
+                              </tr>
+                              <tr>
+                                 <th>Aanduiding strijdigheid/nietigheid</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie kardinaliteit</th>
+                                 <td>1</td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie authentiek</th>
+                                 <td>Authentiek</td>
+                              </tr>
+                              <tr>
+                                 <th>Regels</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Formaat</th>
+                                 <td>
+                                    <a class="link" href="#detail_class_KunstwerkenConstructies_VerticaleReferentie">Verticale­Referentie</a>
+                                    </td>
+                              </tr>
+                              <tr>
+                                 <th>Patroon</th>
+                                 <td> </td>
+                              </tr>
+                              <tr>
+                                 <th>Indicatie afleidbaar</th>
+                                 <td>Zie package</td>
+                              </tr>
+                              <tr>
+                                 <th>Waarde afleidbaar</th>
+                                 <td>Nee</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
                      
                      <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Stuw_typeStuw">
                         <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_Stuw">Stuw</a> type­Stuw</h7>
@@ -6611,7 +6792,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>een attribuut voor de nadere aanduiding van het type stuw</p>
+                                    <p>nader specificeert het type stuw</p>
                                     </td>
                               </tr>
                               <tr>
@@ -6666,6 +6847,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Stuw­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
@@ -6693,7 +6880,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>een attribuut voor de nadere aanduiding van het type verbeterinstallatie</p>
+                                    <p>nader specificeert het type verbeterinstallatie</p>
                                     </td>
                               </tr>
                               <tr>
@@ -6748,6 +6935,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Verbeterinstallatie­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
@@ -6775,7 +6968,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>een attribuut voor de nadere aanduiding van type vispassage</p>
+                                    <p>nader specificeert het type vispassage</p>
                                     </td>
                               </tr>
                               <tr>
@@ -6830,6 +7023,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Vispassage­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
@@ -7104,7 +7303,8 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>de maatgevende hoogte van de onderzijde van de brugdekconstructie</p>
+                                    <p>specificeert de hoogte van de onderzijde van een brug, zodat de doorvaart hoogte kan
+                                       worden bepaald</p>
                                     </td>
                               </tr>
                               <tr>
@@ -7188,7 +7388,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>nadere aanduiding van het type brug</p>
+                                    <p>nader specificeert het type brug</p>
                                     </td>
                               </tr>
                               <tr>
@@ -7243,6 +7443,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Brug­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
@@ -7272,7 +7478,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Diameter van de Drainagebuis. </p>
+                                    <p>specificeert wat de diameter is van de koker van een ondertunneling </p>
                                     </td>
                               </tr>
                               <tr>
@@ -7506,7 +7712,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Materiaal van de Drainagebuis.</p>
+                                    <p>nader specificeert uit welk materiaal de koker van een ondertunneling bestaat</p>
                                     </td>
                               </tr>
                               <tr>
@@ -7588,7 +7794,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Diameter van de Drainagebuis. </p>
+                                    <p>specificeert wat de diameter is van de koker van een ondertunneling</p>
                                     </td>
                               </tr>
                               <tr>
@@ -7906,7 +8112,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Diameter van de Drainagebuis. </p>
+                                    <p>specificeert wat de diameter is van de koker van een ondertunneling </p>
                                     </td>
                               </tr>
                               <tr>
@@ -8226,7 +8432,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>definitie aan te maken</p>
+                                    <p>verwijst naar de gegevensgroep Afmeting­Constructie</p>
                                     </td>
                               </tr>
                               <tr>
@@ -8591,85 +8797,6 @@
                            </div>
                         </div>
                      
-                     <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_WaterstaatkundigeConstructie_geografischeOrientatie">
-                        <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_WaterstaatkundigeConstructie">Waterstaatkundige­Constructie</a> geografische­Orientatie</h7>
-                        
-                        <table style="width: 100%;">
-                           <colgroup style="width: 30%;"></colgroup>
-                           <colgroup style="width: 70%;"></colgroup>
-                           <tbody>
-                              <tr>
-                                 <th>Naam</th>
-                                 <td>geografische­Orientatie</td>
-                              </tr>
-                              <tr>
-                                 <th>Herkomst</th>
-                                 <td>
-                                    <a href="https://aquo.nl/index.php/Begrip aan te maken" target="_blank">https://aquo.nl/index.php/Begrip aan te maken</a>
-                                    </td>
-                              </tr>
-                              <tr>
-                                 <th>Definitie</th>
-                                 <td>
-                                    
-                                    <p>Richting in graden van de ligging van het object t.o.v. het noorden. Te gebruiken
-                                       voor het aangeven van de geografische oriëntatie van het object op de kaart.</p>
-                                    </td>
-                              </tr>
-                              <tr>
-                                 <th>Herkomst definitie</th>
-                                 <td>Aquo</td>
-                              </tr>
-                              <tr>
-                                 <th>Datum opname</th>
-                                 <td> </td>
-                              </tr>
-                              <tr>
-                                 <th>Mogelijk geen waarde</th>
-                                 <td>Nee</td>
-                              </tr>
-                              <tr>
-                                 <th>Indicatie in onderzoek</th>
-                                 <td>Nee</td>
-                              </tr>
-                              <tr>
-                                 <th>Aanduiding strijdigheid/nietigheid</th>
-                                 <td> </td>
-                              </tr>
-                              <tr>
-                                 <th>Indicatie kardinaliteit</th>
-                                 <td>0 .. 1</td>
-                              </tr>
-                              <tr>
-                                 <th>Indicatie authentiek</th>
-                                 <td>Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <th>Regels</th>
-                                 <td> </td>
-                              </tr>
-                              <tr>
-                                 <th>Formaat</th>
-                                 <td>
-                                    Measure
-                                    </td>
-                              </tr>
-                              <tr>
-                                 <th>Patroon</th>
-                                 <td> </td>
-                              </tr>
-                              <tr>
-                                 <th>Indicatie afleidbaar</th>
-                                 <td>Zie package</td>
-                              </tr>
-                              <tr>
-                                 <th>Waarde afleidbaar</th>
-                                 <td>Nee</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                        </div>
-                     
                      <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_WaterstaatkundigeConstructie_geometrie">
                         <h7>Attribuutsoort details  <a href="#global_class_KunstwerkenConstructies_WaterstaatkundigeConstructie">Waterstaatkundige­Constructie</a> geometrie</h7>
                         
@@ -8691,7 +8818,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Geometrische representatie van het object.</p>
+                                    <p>specificeert de geometrie van een object in een punt, vlak of lijn</p>
                                     </td>
                               </tr>
                               <tr>
@@ -8769,7 +8896,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>De naam van een kunstwerk</p>
+                                    <p>specificeert de naam waaronder een object bekend staat</p>
                                     </td>
                               </tr>
                               <tr>
@@ -8847,7 +8974,8 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Definitie aan te maken</p>
+                                    <p>nader specificeert welke status een waterstaatkundige constructie heeft binnen de
+                                       legger van een Waterschap</p>
                                     </td>
                               </tr>
                               <tr>
@@ -8902,6 +9030,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Legger­Status van toepassing.</p>
+                           </div>
                         </div>
                      
                      <div class="deepheader" id="detail_association_KunstwerkenConstructies_WaterstaatkundigeConstructie_oppervlaktewater">
@@ -8966,7 +9100,7 @@
                         
                         </div>
                      
-                     <div class="deepheader" id="detail_association_KunstwerkenConstructies_WaterstaatkundigeConstructie_Waterstaatkindigconstructieelement">
+                     <div class="deepheader" id="detail_association_KunstwerkenConstructies_WaterstaatkundigeConstructie_Waterstaatkundigconstructieelement">
                         <h7>Relatiesoort details  <a href="#global_class_KunstwerkenConstructies_WaterstaatkundigeConstructie">Waterstaatkundige­Constructie</a> is­Onderdeel­Van</h7>
                         
                         <table style="width: 100%;">
@@ -9130,7 +9264,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>een attribuut voor de nadere aanduiding van het type dam</p>
+                                    <p>nader specificeert het type dam</p>
                                     </td>
                               </tr>
                               <tr>
@@ -9185,6 +9319,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Dam­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
@@ -9208,7 +9348,10 @@
                               </tr>
                               <tr>
                                  <th>Definitie</th>
-                                 <td> </td>
+                                 <td>
+                                    
+                                    <p>nader specificeert het type dijk</p>
+                                    </td>
                               </tr>
                               <tr>
                                  <th>Herkomst definitie</th>
@@ -9262,6 +9405,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Dijk­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
@@ -9285,7 +9434,10 @@
                               </tr>
                               <tr>
                                  <th>Definitie</th>
-                                 <td> </td>
+                                 <td>
+                                    
+                                    <p>nader specificeert het type golfbreker</p>
+                                    </td>
                               </tr>
                               <tr>
                                  <th>Herkomst definitie</th>
@@ -9339,6 +9491,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Golfbreker­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
@@ -9364,7 +9522,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Nadere aanduiding van het type oververdediging.</p>
+                                    <p>nader specificeert het type oeverbekleding</p>
                                     </td>
                               </tr>
                               <tr>
@@ -9419,6 +9577,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Oeverbekleding­Type van toepassing.</p>
+                           </div>
                         </div>
                      
                      <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Oeverconstructie_typeWandconstructie">
@@ -9577,15 +9741,13 @@
                               </tr>
                               <tr>
                                  <th>Herkomst</th>
-                                 <td>
-                                    <a href="https://aquo.nl/index.php/GUID aan te maken" target="_blank">https://aquo.nl/index.php/GUID aan te maken</a>
-                                    </td>
+                                 <td> </td>
                               </tr>
                               <tr>
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>een attribuut voor de nadere aanduiding van het type wandconstructie</p>
+                                    <p>nader specificeert het type wandconstructie</p>
                                     </td>
                               </tr>
                               <tr>
@@ -9640,6 +9802,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Wandconstructie­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
@@ -9663,7 +9831,10 @@
                               </tr>
                               <tr>
                                  <th>Definitie</th>
-                                 <td> </td>
+                                 <td>
+                                    
+                                    <p>nader specificeert het type waterbodemconstructie</p>
+                                    </td>
                               </tr>
                               <tr>
                                  <th>Herkomst definitie</th>
@@ -9717,6 +9888,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Waterbodemconstructie­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
@@ -9821,7 +9998,8 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Filter aanwezig (J/N) aan de uittredezijde van het kunstwerk waarin uitstroming plaatsvindt.</p>
+                                    <p>specificeert of bovenstrooms een filter aanwezig is in een doorstroomopening van een
+                                       kunstwerk</p>
                                     </td>
                               </tr>
                               <tr>
@@ -9876,13 +10054,6 @@
                               </tr>
                            </tbody>
                         </table>
-                        
-                        <div class="notoc">
-                           <h8>Toelichting  </h8>
-                           
-                           <p>Een goed functionerend filter zorgt ervoor dat het water uittreedt in het filter,
-                              en dat hierbij geen zanddeeltjes worden meegevoerd.</p>
-                           </div>
                         </div>
                      
                      <div class="deepheader" id="detail_attribute_KunstwerkenConstructies_Doorstroomopening_aanwezigheidFilterBovenstrooms">
@@ -9906,7 +10077,8 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Filter aanwezig (J/N) aan de uittredezijde van het kunstwerk waarin uitstroming plaatsvindt.</p>
+                                    <p>specificeert of benedenstrooms een filter aanwezig is in een doorstroomopening van
+                                       een kunstwerk</p>
                                     </td>
                               </tr>
                               <tr>
@@ -9961,13 +10133,6 @@
                               </tr>
                            </tbody>
                         </table>
-                        
-                        <div class="notoc">
-                           <h8>Toelichting  </h8>
-                           
-                           <p>Een goed functionerend filter zorgt ervoor dat het water uittreedt in het filter,
-                              en dat hierbij geen zanddeeltjes worden meegevoerd.</p>
-                           </div>
                         </div>
                      
                      <div class="notoc" id="detail_attribute_KunstwerkenConstructies_Doorstroomopening_afmetingDoorstroomopening">
@@ -9992,7 +10157,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>nadere aanduiding van de afmeting van een doorstroomopening</p>
+                                    <p>verwijst naar de gegevensgroep afmeting­Doorstroom­Opening</p>
                                     </td>
                               </tr>
                               <tr>
@@ -10296,8 +10461,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Coëfficiënt die bij de berekening van de afvoer over en door kunstwerken de gevolgen
-                                       van onvolkomenheden in de schematisatie van de waterbeweging compenseert</p>
+                                    <p>specificeert wat het afvoer coefficient is van een doorstroomopening in een kustwerk</p>
                                     </td>
                               </tr>
                               <tr>
@@ -10439,7 +10603,10 @@
                               </tr>
                               <tr>
                                  <th>Definitie</th>
-                                 <td> </td>
+                                 <td>
+                                    
+                                    <p>verwijst naar de gegevensgroep afmeting­Doorvaart­Opening</p>
+                                    </td>
                               </tr>
                               <tr>
                                  <th>Herkomst definitie</th>
@@ -11652,7 +11819,7 @@
                               <tr>
                                  <th>Formaat</th>
                                  <td>
-                                    Hoedanigheid
+                                    <a class="link" href="#detail_class_KunstwerkenConstructies_VerticaleReferentie">Verticale­Referentie</a>
                                     </td>
                               </tr>
                               <tr>
@@ -11938,8 +12105,7 @@
                               </td>
                            <td>
                               
-                              <p>aanduiding van hoe een bedieningsinstallatie de bedieningscommando’s verstuurd naar
-                                 de besturingsinstallatie van een object</p>
+                              <p>nader specificeert hoe en vanaf waar een kunstwerk wordt bediend</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_Bedieningswijze">Bedieningswijze</a>
@@ -12125,8 +12291,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>een kunstwerk installatie dat bedoeld is om water te verplaatsen door middel van een
-                                 pomp en de techniek om de pomp aan te sturen/aan te drijven</p>
+                              <p>een kunstwerk installatie dat bedoeld is om grondwater en/of oppervlaktewater te verplaatsen
+                                 door middel van een pomp en de techniek om de pomp aan te sturen/aan te drijven</p>
                               </td>
                         </tr>
                         <tr>
@@ -12176,7 +12342,7 @@
                               </td>
                            <td>
                               
-                              <p>de maximaal per tijdseenheid te verpompen hoeveelheid water</p>
+                              <p>specificeert de maximale pompcapaciteit van een pompinstallatie</p>
                               </td>
                            <td>
                               Measure
@@ -12189,8 +12355,7 @@
                               </td>
                            <td>
                               
-                              <p>Nadere aanduiding voor de energiebron/voorziening waarmee/waardoor een pompinstallatie
-                                 wordt aangedreven </p>
+                              <p>nader specificeert hoe een pomp wordt aangedreven</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_PompAandrijvingType">Pomp­Aandrijving­Type</a>
@@ -12309,7 +12474,7 @@
                               </td>
                            <td>
                               
-                              <p>nadere aanduiding van het type afsluitmiddel</p>
+                              <p>nader specificeert het type afsluitmiddel</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_AfsluitmiddelType">Afsluitmiddel­Type</a>
@@ -12322,7 +12487,7 @@
                               </td>
                            <td>
                               
-                              <p>een nadere aanduiding voor het materiaal waar het afsluitmiddel uit bestaat</p>
+                              <p>nader specificeert uit welk materiaal een afsluitmiddel is bestaat</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_CodelijstenAquoDS_Materialen_voor_kunstwerken">Materialen_voor_kunstwerken</a>
@@ -12335,7 +12500,7 @@
                               :</td>
                            <td>
                               
-                              <p>de afmeting van een afsluitmiddel in de breedte hoogte en diepte</p>
+                              <p>verwijst naar de gegevensgroep gegevensgroep afmeting­Afsluitmiddel</p>
                               </td>
                            <td>
                               <a class="link" href="#detail_class_KunstwerkElement_AfmetingAfsluitmiddel">Afmeting­Afsluitmiddel</a>
@@ -12676,8 +12841,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>aanduiding van hoe een bedieningsinstallatie de bedieningscommando’s verstuurd naar
-                                       de besturingsinstallatie van een object</p>
+                                    <p>nader specificeert hoe en vanaf waar een kunstwerk wordt bediend</p>
                                     </td>
                               </tr>
                               <tr>
@@ -12732,6 +12896,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Bedieningswijze van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   
@@ -12838,7 +13008,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>de maximaal per tijdseenheid te verpompen hoeveelheid water</p>
+                                    <p>specificeert de maximale pompcapaciteit van een pompinstallatie</p>
                                     </td>
                               </tr>
                               <tr>
@@ -12916,8 +13086,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>Nadere aanduiding voor de energiebron/voorziening waarmee/waardoor een pompinstallatie
-                                       wordt aangedreven </p>
+                                    <p>nader specificeert hoe een pomp wordt aangedreven</p>
                                     </td>
                               </tr>
                               <tr>
@@ -12972,6 +13141,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Pompaandrijving­Type van toepassing. </p>
+                           </div>
                         </div>
                      </section>
                   
@@ -13000,7 +13175,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>de afmeting van een afsluitmiddel in de breedte hoogte en diepte</p>
+                                    <p>verwijst naar de gegevensgroep gegevensgroep afmeting­Afsluitmiddel</p>
                                     </td>
                               </tr>
                               <tr>
@@ -13302,7 +13477,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>nadere aanduiding van het type afsluitmiddel</p>
+                                    <p>nader specificeert het type afsluitmiddel</p>
                                     </td>
                               </tr>
                               <tr>
@@ -13357,6 +13532,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Afsluitmiddel­Type van toepassing.</p>
+                           </div>
                         </div>
                      
                      <div class="deepheader" id="detail_attribute_KunstwerkElement_Afsluitmiddel_typeAfsluitmiddelMateriaal">
@@ -13380,7 +13561,7 @@
                                  <th>Definitie</th>
                                  <td>
                                     
-                                    <p>een nadere aanduiding voor het materiaal waar het afsluitmiddel uit bestaat</p>
+                                    <p>nader specificeert uit welk materiaal een afsluitmiddel is bestaat</p>
                                     </td>
                               </tr>
                               <tr>
@@ -13435,6 +13616,12 @@
                               </tr>
                            </tbody>
                         </table>
+                        
+                        <div class="notoc">
+                           <h8>Toelichting  </h8>
+                           
+                           <p>Hier is de domeintabel Afsluitmiddel­Materiaal­Type van toepassing.</p>
+                           </div>
                         </div>
                      </section>
                   </section>
@@ -13796,7 +13983,7 @@
                               
                               [ 1 .. * ]
                               
-                              <a class="link" href="#detail_association_KunstwerkenConstructies_WaterstaatkundigeConstructie_Waterstaatkindigconstructieelement">is­Onderdeel­Van: Waterstaatkindigconstructieelement</a>
+                              <a class="link" href="#detail_association_KunstwerkenConstructies_WaterstaatkundigeConstructie_Waterstaatkundigconstructieelement">is­Onderdeel­Van: Waterstaatkundigconstructieelement</a>
                               
                               Waterstaatkundig­Constructie­Element
                               [ 1 .. * ]
@@ -13819,8 +14006,8 @@
                   
                   </section>
                
-               <section id="global_class_ConstructieElement_KernOpbouw">
-                  <h5>   Kern­Opbouw</h5>
+               <section id="global_class_ConstructieElement_Grondlichaam">
+                  <h5>   Grondlichaam</h5>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -13828,7 +14015,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>Kern­Opbouw</td>
+                           <td>Grondlichaam</td>
                         </tr>
                         <tr>
                            <th>Herkomst</th>
@@ -13885,7 +14072,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a class="link" href="#detail_attribute_ConstructieElement_KernOpbouw_typeKernopbouw">type­Kernopbouw</a>
+                              <a class="link" href="#detail_attribute_ConstructieElement_Grondlichaam_typeKernopbouw">type­Kernopbouw</a>
                               </td>
                            <td>
                               
@@ -13912,7 +14099,7 @@
                         </tr>
                         <tr>
                            <td>
-                              Kern­Opbouw
+                              Grondlichaam
                               is specialisatie van
                               
                               <a class="link" href="#global_class_ConstructieElement_WaterstaatkundigConstructieElement">Waterstaatkundig­Constructie­Element</a>
@@ -15115,7 +15302,7 @@
                         </tr>
                         <tr>
                            <td>
-                              <a class="link" href="#detail_attribute_ConstructieElement_Overgangsconstructie_typeConstructie">type­Constructie</a>
+                              <a class="link" href="#detail_attribute_ConstructieElement_Overgangsconstructie_typeOvergangconstructie">type­Overgangconstructie</a>
                               </td>
                            <td>
                               
@@ -16071,11 +16258,11 @@
                         </div>
                      </section>
                   
-                  <section id="detail_class_ConstructieElement_KernOpbouw">
-                     <h6>   Kern­Opbouw</h6>
+                  <section id="detail_class_ConstructieElement_Grondlichaam">
+                     <h6>   Grondlichaam</h6>
                      
-                     <div class="deepheader" id="detail_attribute_ConstructieElement_KernOpbouw_typeKernopbouw">
-                        <h7>Attribuutsoort details  <a href="#global_class_ConstructieElement_KernOpbouw">Kern­Opbouw</a> type­Kernopbouw</h7>
+                     <div class="deepheader" id="detail_attribute_ConstructieElement_Grondlichaam_typeKernopbouw">
+                        <h7>Attribuutsoort details  <a href="#global_class_ConstructieElement_Grondlichaam">Grondlichaam</a> type­Kernopbouw</h7>
                         
                         <table style="width: 100%;">
                            <colgroup style="width: 30%;"></colgroup>
@@ -18000,8 +18187,8 @@
                         </table>
                         </div>
                      
-                     <div class="deepheader" id="detail_attribute_ConstructieElement_Overgangsconstructie_typeConstructie">
-                        <h7>Attribuutsoort details  <a href="#global_class_ConstructieElement_Overgangsconstructie">Overgangsconstructie</a> type­Constructie</h7>
+                     <div class="deepheader" id="detail_attribute_ConstructieElement_Overgangsconstructie_typeOvergangconstructie">
+                        <h7>Attribuutsoort details  <a href="#global_class_ConstructieElement_Overgangsconstructie">Overgangsconstructie</a> type­Overgangconstructie</h7>
                         
                         <table style="width: 100%;">
                            <colgroup style="width: 30%;"></colgroup>
@@ -18009,7 +18196,7 @@
                            <tbody>
                               <tr>
                                  <th>Naam</th>
-                                 <td>type­Constructie</td>
+                                 <td>type­Overgangconstructie</td>
                               </tr>
                               <tr>
                                  <th>Herkomst</th>
