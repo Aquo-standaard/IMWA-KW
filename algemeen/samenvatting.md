@@ -1,1 +1,0 @@
-Dit document geeft een beschrijving van het domein Kunstwerken & Constructies binnen het Informatiemodel Water (IMWA). 
