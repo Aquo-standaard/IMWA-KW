@@ -16,10 +16,10 @@ De volgende aspecten van de gegevens worden vastgelegd:</p>
 </section>
 <section id="introModel">
 <h2>Modelelementen</h2>
-<p>De modelelementen van een informatiemodel zijn de bouwstenen die samen de structuur en de functionaliteit van het model definiëren. Elk element speelt een specifieke rol in het beschrijven van hoe data wordt georganiseerd en beheerd binnen een systeem. </p>	
-<h3>Objecten</h3>
+<p>De modelelementen van een informatiemodel zijn de bouwstenen die samen de structuur en de functionaliteit van het model definiëren. Elk element speelt een specifieke rol in het beschrijven van hoe data wordt georganiseerd en beheerd binnen een systeem. </p>
+	
 <section id='objecten'>
-    <p>Hier zijn de belangrijkste modelelementen in een informatiemodel:</p>
+	<h3>Objecten</h3>
 <ul>
     <li><b>Object</b> Voor het belangrijkste element zijn er vanuit verschillende perspectieven verschillende benamingen: object, informatieobject, objecttype (MIM), entiteit (database) of klasse (UML). De concepten zijn in nuance verschillend, maar al deze concepten vertegenwoordigen een verzameling van informatie dat bij elkaar hoort over een bepaald onderwerp. In het Informatiemodel Water wordt de voorkeur gegeven aan Object.</li>
     <li><b>Attribuut</b> Met attributen worden de eigenschappen of kenmerken van een object vastgelegd.</li>
@@ -27,8 +27,9 @@ De volgende aspecten van de gegevens worden vastgelegd:</p>
 </ul>
 </section>
 
-<h3>Relaties</h3>
+
 <section id="relaties">
+	<h3>Relaties</h3>
 <p>Relaties beschrijven hoe objecten met elkaar verbonden zijn. De meest voorkomende relatie in IMWA is de generalisatie. Daarnaast komt een enkele keer de associatierelatie voor. </p>
   <p>
 <figure id='image002'>
@@ -43,14 +44,24 @@ De volgende aspecten van de gegevens worden vastgelegd:</p>
 </p>
 </section>
 
-<h3>Domeinen en datatypen</h3>
-<section id='datatypen'>
-<p>Alle attributen hebben een datatype of een domein. Enkele datatype zijn relijk eenvoudig: number, integer, characterstring, date, year. Sommige datatype zijn complexer.
+
+<section id='domeinen-en-datatypen'>
+	<h3>Domeinen en datatypen</h3>
+<p>Alle attributen hebben een datatype of een domein. </p>
+	<section id="datatype">
+		<h4>Datatypen</h4>
+		Enkele datatype zijn relijk eenvoudig: number, integer, characterstring, date, year. Sommige datatype zijn complexer.
   <p>
   <ul>
     <li><b>Measure</b> Het datatype Measure bestaat uit twee delen: een getalswaarde (rationaal getal) en een eenheid. In de huidige versie van het informatiemodel is de getalswaarde niet verder gespecificeerd met de opbouw en het bereik. Ook is de eenheid nog niet opgenomen. </li>
     <li><b>Geometrie</b> Bij de attributen van het type Geometrie wordt gebruik gemaakt van de geometrie-typen zoals die zijn beschreven in OpenGis Specificatie. In het conceptueel model komt GM_Object het vaakst voor. Een GM_Object kan verschillende specifieke vormen aannemen, zoals: punt, lijn, vlak of complexere vormen.  </li>
   </ul>
-  </p>
+  </p>	
 </section>
+	<section id="domeinen">
+		<h4>Domeinen</h4>
+		<p>Een uitbreidbare waardelijst wordt gebruikt wanneer uitbreiding mogelijk moet zijn. Iedere waarde van de lijst heeft een specifieke betekenis (omschrijving) Eventueel worden andere aspecten van de waarde vastgelegd. 
+<br>Bij een uitbreidbare waardelijst wordt de naam van de lijst gegeven. De inhoud van de lijst is in een apart hoofdstuk van de gegevensdefinitie opgenomen.</p>
+</p>
+	</section>		
 </section>
