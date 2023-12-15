@@ -1,15 +1,46 @@
-<h3>modelleerbeslissingen</h3>
-<section id="modelleerbeslissingen">
-<p>Bij de doorontwikkeling van IMWA zijn een aantal modelleerbeslissingen genomen die invloed hebben gehad op inhoud en uiterlijk van het model.
-</p>
-<p>IMWA is een sectormodel binnen de NEN3610:2022 (Basismodel geo-informatie) familie. Hierdoor zijn bijna alle objecten afleidingen van het object GeoObject, de hoogste superklasse van het informatiemodel geo-informatie.
-Geo-objecten kunnen aan elkaar zijn gerelateerd, waarbij onderscheid kan worden gemaakt in:
-<li>Ruimtelijke relaties (paragraaf 9.12, NEN 3610:2022): deze relaties kunnen worden benoemd op basis van OGC Simple Features Access.</li>
-<li>Administratieve relaties: hiermee kan een verband (associatie) tussen geo-objecten en andere (niet-geo) objecten, zoals een norm of een meting worden vastgelegd.</li>
-<li>Aggregatierelaties (paragraaf 8.7, NEN 3610:2022): hiermee kan de samenstelling van een geo-object uit andere geo-objecten worden gemodelleerd.</li></p>
-<p>Een aantal van deze relaties is in de domeinmodellen binnen het het conceptueel IM Water gedefinieerd. In de logische informatiemodellen (voor een specifiek uitwisseldoel) moeten deze mogelijk worden aangevuld en/of geconcretiseerd.
-</section>
-<section id="open_punten">
-    <h3>Open punten</h3>
-    <p>Een paar punten staan nog open:</p>
-</section>
+<html xmlns:uml="omg.org/UML1.3">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>EADefect Lijst</title>
+		<style type="text/css">
+                    body { font-family: Arial, sans-serif; }
+                    ul { list-style-type: none; }
+                    li { margin-bottom: 10px; }
+                </style>
+	</head>
+	<body>
+		<h2>EADefect Lijst</h2>
+		<ul>
+			<li><strong>Naam:</strong>Aansluiting op IMGeo<br><strong>Omschrijving:</strong>De relatie tussen IMWA:Kunstwerk -&amp;gt; IMGeo:Kunstswerkdeel is verplaatst naar IMWA:WaterstaatkundigKunstwerk -&amp;gt; IMGeo:Kunstwerkdeel en is gewijzigd van het type "Generalisatie" naar "Externe koppeling"<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
+			<li><strong>Naam:</strong>Aspect "functie" voor kunstwerken en constructies<br><strong>Omschrijving:</strong>Voor kunstwerken en constructies is het aspect “functie” opgenomen zodat &amp;#233;&amp;#233;n of meerdere functies van kunstwerken en constructies kunnen worden uitgewisseld (concept op basis van IEC/ISO 81346 RDS). Functie is namelijk een belangrijk aspect in de uitwisseling van gegevens over kunstwerken en constructies, bijvoorbeeld om onderscheid te kunnen maken in de waterkerende en peilregulerende functies van &amp;#233;&amp;#233;n kunstwerk.<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
+			<li><strong>Naam:</strong>Aspect "product" voor kunstwerken en constructies<br><strong>Omschrijving:</strong>Voor kunstwerken en constructies is het aspect “product” opgenomen in de vorm van "kunstwerkelement", respectievelijk "constructie-element" (concept op basis van IEC/ISO 81346 RDS en tevens als uitwerking van het aggregatiemodel uit NEN 3610). Via deze objecttypen kunen gegevens van onderdelen behorend bij kunstwerken wiorden uitgewisseld, zoals bijvoorbeeld afsluitmiddelen en pompen. Hiermee is het mogelijk om gegevens over de decompositie van kunstwerken en constructies uit te wisselen. Dit is bijvoorbeeld relevant voor conditiemetingen (onderhouden van assets) en veiligheidsbeoordeling voor (primaire) keringen (monitoring van assets).<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
+			<li><strong>Naam:</strong>Datatype "Measure", specificeren eenheden (waardenlijst)<br><strong>Omschrijving:</strong><br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
+			<li><strong>Naam:</strong>Doorstroomopening voor kunstwerken<br><strong>Omschrijving:</strong>In relatie tot kunstwerken kunnen gegevens van doorstroomopeningen worden uitgewisseld vanuit het perspectief van hydrologie en/of scheepvaart, bijvoorbeeld voor bruggen. Doorstroomopening is opgenomen als (specialisatie van) “Functionele ruimte” uit NEN3610, en daarmee tevens een geo-object.
+&lt;ul&gt;
+ &lt;li&gt;&lt;ul&gt;
+ &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
+			<li><strong>Naam:</strong>Naamgeving objecttypen<br><strong>Omschrijving:</strong>Voor de naamgeving van obejcttypen is zoveel mogelijk de aansluiting gezocht bij standaarden dien binnen de watersector worden gebruikt / in ontwikkeling zijn. Dit zijn:
+&lt;ul&gt;
+ &lt;li&gt;NEN 3610:2022 - Basismodel geo-informatie&lt;/li&gt;
+ &lt;li&gt;Aquo-standaard (begrippenmodel)&lt;/li&gt;
+ &lt;li&gt;WILMA - Waterschaps Informatie en Logische Model Architectuur (bedrijfsobjecten)&lt;/li&gt;
+ &lt;li&gt;SOR - Samenhangende Objecten Regsistratie (conceptueel model)&lt;/li&gt;
+ &lt;li&gt;GWSW - Gegevenswoordenboek Stedelijk Water&lt;/li&gt;
+ &lt;li&gt;NEN 2767-4 - Conditiemeting infrastructurele werken&lt;/li&gt;
+&lt;/ul&gt;<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
+			<li><strong>Naam:</strong>Objecttype "Kunstwerk" overgenomen uit NEN 3610<br><strong>Omschrijving:</strong>Het objecttype "Kunstwerk" in IMWA Kunstwerken is overgenomen uit NEN 3610:2022 voor nadere uitwerking van:
+&lt;ul&gt;
+ &lt;li&gt;typering van kunstwerken (via specialisatie)&lt;/li&gt;
+ &lt;li&gt;attributen (generiek voor alle type kunstwerken)&lt;/li&gt;
+ &lt;li&gt;relaties (binnen IMWA)&lt;/li&gt;
+&lt;/ul&gt;<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
+			<li><strong>Naam:</strong>Relevantie van tunnels voor waterbeheer<br><strong>Omschrijving:</strong>Tunnels (ten behoeve van verkeer) zijn in het informatiemodel opgenomen omdat deze van belang (kunnen) zijn vanuit het perspectief van waterveiligheid en/of wateroverlast.<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
+			<li><strong>Naam:</strong>Typering "Kunstwerk" op basis van SOR<br><strong>Omschrijving:</strong>De typering van het objecttype "Kunstwerk" naar waterstaatkundig kunstwerk, overbrugging en ondertunneling is gebaseerd op het conceptueel model voor de Samenhangende Objecten Registratie (SOR). Deze (hoofd)typering is opgenomen als specialisatie van "Kunstwerk" middels zogenoemde ‘abstracte objecttypen’. Deze kunnen niet worden ge&amp;#239;nstantieerd.
+<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
+			<li><strong>Naam:</strong>Waterstaatkundige constructies opgenomen<br><strong>Omschrijving:</strong>Naast kunstwerken zijn, als specialisatie van "Constructie" uit NEN 3610, "Waterstaatkundige constructies" opgenomen voor objecttypen die in het algemeen niet als kunstwerk worden beschouwd. Hieronder zijn met name objecttypen geschaard uit het (voormalige) informatiemodel waterveiligheid, namelijk: dijk, dam, aansluitconstructie en wandconstructie.<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
+		</ul>
+	</body>
+</html>
