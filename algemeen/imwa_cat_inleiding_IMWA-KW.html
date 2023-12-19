@@ -44,7 +44,7 @@
  <li>relaties (binnen IMWA)</li>
 &lt;/ul&gt;<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
 			<li><strong>Naam:</strong>Relevantie van tunnels voor waterbeheer<br><strong>Omschrijving:</strong>Tunnels (ten behoeve van verkeer) zijn in het informatiemodel opgenomen omdat deze van belang (kunnen) zijn vanuit het perspectief van waterveiligheid en/of wateroverlast.<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
-			<li><strong>Naam:</strong>Typering "Kunstwerk" op basis van SOR<br><strong>Omschrijving:</strong>De typering van het objecttype "Kunstwerk" naar waterstaatkundig kunstwerk, overbrugging en ondertunneling is gebaseerd op het conceptueel model voor de Samenhangende Objecten Registratie (SOR). Deze (hoofd)typering is opgenomen als specialisatie van "Kunstwerk" middels zogenoemde ‘abstracte objecttypen’. Deze kunnen niet worden ge&amp;#239;nstantieerd.
+			<li><strong>Naam:</strong>Typering "Kunstwerk" op basis van SOR<br><strong>Omschrijving:</strong>De typering van het objecttype "Kunstwerk" naar waterstaatkundig kunstwerk, overbrugging en ondertunneling is gebaseerd op het conceptueel model voor de Samenhangende Objecten Registratie (SOR). Deze (hoofd)typering is opgenomen als specialisatie van "Kunstwerk" middels zogenoemde ‘abstracte objecttypen’. Deze kunnen niet worden geïnstantieerd.
 <br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
 			<li><strong>Naam:</strong>Waterstaatkundige constructies opgenomen<br><strong>Omschrijving:</strong>Naast kunstwerken zijn, als specialisatie van "Constructie" uit NEN 3610, "Waterstaatkundige constructies" opgenomen voor objecttypen die in het algemeen niet als kunstwerk worden beschouwd. Hieronder zijn met name objecttypen geschaard uit het (voormalige) informatiemodel waterveiligheid, namelijk: dijk, dam, aansluitconstructie en wandconstructie.<br><strong>Datum Gerapporteerd:</strong>2023-12-14 00:00:00</li>
 		</ul>
@@ -65,23 +65,22 @@
 			<li><strong>9. Issue: </strong>Wat is de functie/bedoeling van het attribuut "erosieBestendigheid" (bij Afdekmateriaal)? Deze heeft als domeintabel "Staat" (met daarin als waarden goed, matig, slecht, onbekend’). Is dit bedoeld als een fysieke eigenschap of is dit een beoordeling (zou in dat geval een waardebepalingsmethode moeten hebben en thuishoren bij "Observaties")?</li>
 			<li><strong>10. Issue: </strong>Is het wenselijk om i.p.v. typeOvergangsconstructie en typeTeenconstructie het type materiaal bij deze constructies op te nemen?</li>
 			<li><strong>11. Issue: </strong>Kunstwerk als specialisatie van Waterstaatswerk</li>
-			<li><strong>12. Issue: </strong>In NEN 3610:2022 wordt op hoofdlijnen onderscheid gemaakt in re&amp;#235;le (fysieke) geo-objecten enerzijds en virtuele geo-objecten (zoals functionele ruimten) anderzijds. NEN 3610:2022 heeft geen relaties uitgewerkt tussen re&amp;#235;le objecten / virtuele ruimten, maar gesteld is dat dit in sectormodellen uitgewerkt kan/moet worden.
+			<li><strong>12. Issue: </strong>In NEN 3610:2022 wordt op hoofdlijnen onderscheid gemaakt in reële (fysieke) geo-objecten enerzijds en virtuele geo-objecten (zoals functionele ruimten) anderzijds. NEN 3610:2022 heeft geen relaties uitgewerkt tussen reële objecten / virtuele ruimten, maar gesteld is dat dit in sectormodellen uitgewerkt kan/moet worden.
 
 Uit de definitie van “kunstwerk” (civieltechnisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen) kan worden geconcludeerd dat kunstwerken bestaan voor de infrastructuur van o.a. water en waterkeringen. Je zou daarmee kunnen zeggen dat kunstwerken altijd ‘een onderdeel’ zijn van genoemde infrastructuur, zoals oppervlaktewateren en keringen (bv. dijken).</li>
 			<li><strong>13. Issue: </strong>Aannames:
 
-“Kunstwerk” is een re&amp;#235;el object en kan daarmee niet ook een virtueel object (functionele ruimte) zijn.
+“Kunstwerk” is een reëel object en kan daarmee niet ook een virtueel object (functionele ruimte) zijn.
 
 “Kunstwerk” is altijd een onderdeel van een infrastructuur voor wegen, water, spoorbanen, waterkeringen en/of leidingen. Een sluis kan bijvoorbeeld een onderdeel zijn van zowel een oppervlaktewater (bv. kanaal) als een waterkering (bv. dijk).
 
-Een “Kunstwerk” kan onderdeel zijn van een “Kunstwerkcomplex”. Een “Kunstwerkcomplex” kan als een functionele ruimte worden beschouwd. “Kunstwerk” is een re&amp;#235;el object en kan daarmee niet ook een virtueel object (functionele ruimte) zijn.
+Een “Kunstwerk” kan onderdeel zijn van een “Kunstwerkcomplex”. Een “Kunstwerkcomplex” kan als een functionele ruimte worden beschouwd. “Kunstwerk” is een reëel object en kan daarmee niet ook een virtueel object (functionele ruimte) zijn.
 
 “Kunstwerk” is altijd een onderdeel van een infrastructuur voor wegen, water, spoorbanen, waterkeringen en/of leidingen. Een sluis kan bijvoorbeeld een onderdeel zijn van zowel een oppervlaktewater (bv. kanaal) als een waterkering (bv. dijk).
 
 Een “Kunstwerk” kan onderdeel zijn van een “Kunstwerkcomplex”. Een “Kunstwerkcomplex” kan als een functionele ruimte worden beschouwd.</li>
-			<li><strong>14. Issue: </strong>Voorstel besluit
-Voorgesteld wordt om de relatie (generalisatie) tussen “Kunstwerk” en “Waterstaatswerk” (de ‘route’ naar de virtuele ruimte in NEN 3610) in IMWA te verwijderen. De relatie tussen “Kunstwerk” en “Kunstwerkcomplex” blijft gehandhaafd. Via “Kunstwerkcomplex” kunnen ruimten waarin meerdere kunstwerken voorkomen geografisch worden afgebakend/gevisualiseerd (als functionele ruimte).</li>
-			<li><strong>15. Issue: </strong>Kunstwerken zijn onder NEN 3610 gemodelleerd als “constructie” (re&amp;#235;el object). Dit hebben we in IMWA overgenomen. Binnen het huidige IMWA is Kunstwerk (ook) een specialisatie van “Waterstaatswerk” en sluit aan daarmee aan op NEN 3610 via “Functionele ruimte” en/of “Juridische ruimte”. Daarmee is in IMWA een “Kunstwerk” een specialisatie van zowel een re&amp;#235;el object als een functionele ruimte (virtuele ruimte). De vraag is of dat juist/wenselijk is.</li>
+			<li><strong>14. Issue: </strong>Voorgesteld wordt om de relatie (generalisatie) tussen “Kunstwerk” en “Waterstaatswerk” (de ‘route’ naar de virtuele ruimte in NEN 3610) in IMWA te verwijderen. De relatie tussen “Kunstwerk” en “Kunstwerkcomplex” blijft gehandhaafd. Via “Kunstwerkcomplex” kunnen ruimten waarin meerdere kunstwerken voorkomen geografisch worden afgebakend/gevisualiseerd (als functionele ruimte).</li>
+			<li><strong>15. Issue: </strong>Kunstwerken zijn onder NEN 3610 gemodelleerd als “constructie” (reëel object). Dit hebben we in IMWA overgenomen. Binnen het huidige IMWA is Kunstwerk (ook) een specialisatie van “Waterstaatswerk” en sluit aan daarmee aan op NEN 3610 via “Functionele ruimte” en/of “Juridische ruimte”. Daarmee is in IMWA een “Kunstwerk” een specialisatie van zowel een reëel object als een functionele ruimte (virtuele ruimte). De vraag is of dat juist/wenselijk is.</li>
 		</ul>
   </section>
 </section>
