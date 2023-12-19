@@ -1,5 +1,5 @@
 var respecConfig = {
-  specStatus: "GN-WV",
+  specStatus: "ED",
   specType: "IM",
   //subtitle: "IMWA Kunstwerken Gegevenscatalogus",
    //publishDate: "2023-04-26", 
