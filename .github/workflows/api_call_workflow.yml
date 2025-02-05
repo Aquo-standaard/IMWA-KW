@@ -1,0 +1,26 @@
+name: API Call en Bestand Opslaan
+
+on:
+  workflow_dispatch:  # Zorgt ervoor dat de workflow handmatig gestart kan worden
+
+jobs:
+  fetch-and-save:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: API Call uitvoeren
+        id: api_call
+        run: |
+          RESPONSE=$(curl -s https://redactie.aquo.nl/index.php/Speciaal:Vragen/format%3Djson/limit%3D20/link%3Dall/headers%3Dshow/searchlabel%3DJSON/class%3Dsortable-20wikitable-20smwtable/prefix%3Dnone/sort%3D/order%3Dasc/offset%3D0/-5B-5BCategorie:Domeinwaarden-5D-5D-20-5B-5BBreder::Id-2D78ad56bf-2D9a0e-2D401e-2Db50e-2Db226293f11c5-5D-5D-20-5B-5BEind-20geldigheid::%E2%89%A51-20januari-202025-5D-5D/-3FId/-3FCodes/-3FOmschrijving/-3FBegin-20geldigheid/-3FEind-20geldigheid/mainlabel%3D/prettyprint%3Dtrue/unescape%3Dtrue)
+          echo "$RESPONSE" > BekledinglaagType.json
+
+      - name: Bestand Committen en Pushen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add BekleidinglaagType.json
+          git commit -m "Automatische update vanuit API"
+          git push
