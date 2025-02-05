@@ -1,0 +1,207 @@
+{
+    "printrequests": [
+        {
+            "label": "",
+            "key": "",
+            "redi": "",
+            "typeid": "_wpg",
+            "mode": 2,
+            "format": false
+        },
+        {
+            "label": "Id",
+            "key": "Id",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "Codes",
+            "key": "Codes",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "Omschrijving",
+            "key": "Omschrijving",
+            "redi": "",
+            "typeid": "_txt",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "Begin geldigheid",
+            "key": "Begin_geldigheid",
+            "redi": "",
+            "typeid": "_dat",
+            "mode": 1,
+            "format": ""
+        },
+        {
+            "label": "Eindgeldigheid",
+            "key": "Eindgeldigheid",
+            "redi": "",
+            "typeid": "_wpg",
+            "mode": 1,
+            "format": ""
+        }
+    ],
+    "results": {
+        "Id-ea555ecc-b0ed-4e99-aa64-55c23ce12198": {
+            "printouts": {
+                "Id": [
+                    "6"
+                ],
+                "Codes": [
+                    "BASMTRL"
+                ],
+                "Omschrijving": [
+                    "Basismateriaal"
+                ],
+                "Begin geldigheid": [
+                    {
+                        "timestamp": "1457740800",
+                        "raw": "1/2016/3/12"
+                    }
+                ],
+                "Eindgeldigheid": []
+            },
+            "fulltext": "Id-ea555ecc-b0ed-4e99-aa64-55c23ce12198",
+            "fullurl": "https://www.aquo.nl/index.php/Id-ea555ecc-b0ed-4e99-aa64-55c23ce12198",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": "Basismateriaal"
+        },
+        "Id-9eca8097-3b23-4a1d-9ab7-bec008ae5893": {
+            "printouts": {
+                "Id": [
+                    "3"
+                ],
+                "Codes": [
+                    "FILTR"
+                ],
+                "Omschrijving": [
+                    "Filter"
+                ],
+                "Begin geldigheid": [
+                    {
+                        "timestamp": "1457740800",
+                        "raw": "1/2016/3/12"
+                    }
+                ],
+                "Eindgeldigheid": []
+            },
+            "fulltext": "Id-9eca8097-3b23-4a1d-9ab7-bec008ae5893",
+            "fullurl": "https://www.aquo.nl/index.php/Id-9eca8097-3b23-4a1d-9ab7-bec008ae5893",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": "Filter"
+        },
+        "Id-1cff7995-8d64-4c59-9705-30c09d6559ef": {
+            "printouts": {
+                "Id": [
+                    "5"
+                ],
+                "Codes": [
+                    "GEOTTL"
+                ],
+                "Omschrijving": [
+                    "Geotextiel"
+                ],
+                "Begin geldigheid": [
+                    {
+                        "timestamp": "1457740800",
+                        "raw": "1/2016/3/12"
+                    }
+                ],
+                "Eindgeldigheid": []
+            },
+            "fulltext": "Id-1cff7995-8d64-4c59-9705-30c09d6559ef",
+            "fullurl": "https://www.aquo.nl/index.php/Id-1cff7995-8d64-4c59-9705-30c09d6559ef",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": "Geotextiel"
+        },
+        "Id-6f42ce4e-d326-4307-bc2c-03e27d9c38b2": {
+            "printouts": {
+                "Id": [
+                    "1"
+                ],
+                "Codes": [
+                    "TOPLG"
+                ],
+                "Omschrijving": [
+                    "Toplaag"
+                ],
+                "Begin geldigheid": [
+                    {
+                        "timestamp": "1457740800",
+                        "raw": "1/2016/3/12"
+                    }
+                ],
+                "Eindgeldigheid": []
+            },
+            "fulltext": "Id-6f42ce4e-d326-4307-bc2c-03e27d9c38b2",
+            "fullurl": "https://www.aquo.nl/index.php/Id-6f42ce4e-d326-4307-bc2c-03e27d9c38b2",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": "Toplaag"
+        },
+        "Id-88fc30aa-80ed-4453-9620-df5d35187095": {
+            "printouts": {
+                "Id": [
+                    "2"
+                ],
+                "Codes": [
+                    "UITVLG"
+                ],
+                "Omschrijving": [
+                    "Uitvullaag"
+                ],
+                "Begin geldigheid": [
+                    {
+                        "timestamp": "1457740800",
+                        "raw": "1/2016/3/12"
+                    }
+                ],
+                "Eindgeldigheid": []
+            },
+            "fulltext": "Id-88fc30aa-80ed-4453-9620-df5d35187095",
+            "fullurl": "https://www.aquo.nl/index.php/Id-88fc30aa-80ed-4453-9620-df5d35187095",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": "Uitvullaag"
+        },
+        "Id-ed680490-11be-4056-aab5-98bda023df24": {
+            "printouts": {
+                "Id": [
+                    "4"
+                ],
+                "Codes": [
+                    "VLIJLG"
+                ],
+                "Omschrijving": [
+                    "Vlijlaag"
+                ],
+                "Begin geldigheid": [
+                    {
+                        "timestamp": "1457740800",
+                        "raw": "1/2016/3/12"
+                    }
+                ],
+                "Eindgeldigheid": []
+            },
+            "fulltext": "Id-ed680490-11be-4056-aab5-98bda023df24",
+            "fullurl": "https://www.aquo.nl/index.php/Id-ed680490-11be-4056-aab5-98bda023df24",
+            "namespace": 0,
+            "exists": "1",
+            "displaytitle": "Vlijlaag"
+        }
+    },
+    "serializer": "SMW\\Serializers\\QueryResultSerializer",
+    "version": 2,
+    "rows": 6
+}
