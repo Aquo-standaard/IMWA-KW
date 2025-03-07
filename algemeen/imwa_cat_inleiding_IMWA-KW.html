@@ -2,8 +2,7 @@
 <h1>Informatiemodel Water</h1>
 <section id="IMWA-kwc">
 <h2>Informatiemodel Water Kunstwerken</h2>
-  <p>De Aquo-standaard (Aquo) is de Nederlandse standaard voor het uitwisselen van gegevens binnen de watersector. Het bijbehorende informatiemodel Water (IMWA) beschrijft daarvoor de relevante objecten, onderlinge relaties en attributen binnen een aantal specifieke werkvelden binnen het Nederlands waterbeheer. Voor nu zijn dit de domeinen kunstwerken, waterveiligheid, watersysteem en waterketen. Dit kan en zal in de toekomst worden uitgebreidt afhankelijk van de wensen van gebruikers.
-	Omdat IMWA een omvangrijk model is, is het voor de overzichtelijkheid onderverdeeld in een aantal onderdelen.
+  <p>Een van de thema’s in het informatiemodel water (IMWA) is het onderdeel Kunstwerken<p>
 	<figure id='image003'>
 		<img src="./algemeen/Bedrijfsobjecten model.jpg" alt="De context van IMWA" width="100%"/>
 		<figcaption>Totaalplaat van IMWA in samenhang</figcaption>
@@ -12,10 +11,10 @@
   <p>Zie voor verdere toelichting van de samenhang tussen de verschillende domeinen in de IMWA bij IMWA Basis: </a>
   <a href="https://aquo-standaard.github.io/IMWA-basis/#cat" target="_blank">Catalogus IMWA Basis</a>
 </p> 
-  <p>Kunstwerken is een onderdeel van het Informatiemodel Water (IMWA). Dit onderdeel van IMWA beschrijft de fysieke objecten in de werkelijkheid en de bijbehorende fysieke eigenschappen. Oftewel, dit onderdeel beschrijft de werkelijke kunstwerken die zichtbaar en tastbaar zijn in het landschap met de specifiek bijbehorende  specifieke, uiterlijke kenmerken zoals bijvoorbeeld het type en de afmeting.</p>
-  <p>Uiteraard is er meer informatie relevant om vast te leggen over een kunstwerk, bijvoorbeeld welke functie(s) het object heeft, wie de beheerder is of wat de toestandsbeoordeling is van het object. Dit zijn echter geen fysieke eigenschappen en daarom niet opgenomen in dit onderdeel van IMWA. Dit type informatie is vastgelegd in de andere onderdelen van IMWA zoals ‘Basis’, ‘Watersysteem’, ‘Waterveiligheid’ of ‘Monitoring’. Het onderdeel Kunstwerken is in relatie dan ook nauw verbonden met de andere onderdelen van IMWA.</p>
-  <p>Door deze nauwe relatie van een kunstwerk met andere onderdelen van IMWA kan er iets worden gezegd over een object binnen een bepaalde context en heeft deze ook een rol en functie binnen deze context. Een voorbeeld hiervan is dat een sluis een waterkerende functie heeft en daarmee dus de rol waterkering kan vervullen binnen bijvoorbeeld de context van waterveiligheid. </p>
-  <p>Kunstwerken heeft, naast de fysieke objecten en diens eigenschappen, ook betrekking op de elementen waaruit een kunstwerk kan bestaan. Hierdoor richt Kunstwerken zich dus ook op de decompositie van kunstwerken. Er is voor gekozen om de decomposities van de kunstwerken te beperken tot onderdelen die van belang zijn voor de werking en beoordeling van een kunstwerk, zoals bijvoorbeeld een afsluitmiddel en bekledingsconstructie. Er is niet gekozen voor een verdere decompositie, zoals bijvoorbeeld schroeven en scharnieren, omdat dit ook binnen andere standaarden zoals de NEN2767-4 wordt vastgelegd.</p>
+  <p>IMWA Kunstwerken beschrijft de fysieke objecten in de werkelijkheid en de bijbehorende fysieke eigenschappen. Oftewel, de werkelijke kunstwerken die zichtbaar en tastbaar zijn in het landschap met hun uiterlijke kenmerken zoals bijvoorbeeld het type en de afmeting.</p>
+  <p>Uiteraard is er meer relevante informatie om vast te leggen over een kunstwerk, bijvoorbeeld welke functie(s) het object heeft, wie de beheerder is of wat de toestandsbeoordeling is van het object. Dit zijn echter geen fysieke eigenschappen en daarom niet opgenomen in dit onderdeel van IMWA. Dit type informatie is vastgelegd in de andere onderdelen van IMWA zoals ‘Basis’, ‘Watersysteem’, ‘Waterveiligheid’ of ‘Monitoring’. Het onderdeel Kunstwerken is dan ook nauw verbonden met de andere onderdelen van IMWA.</p>
+  <p>Door deze nauwe relatie kan er wel iets worden gezegd over een kunstwerk binnen een bepaalde context, zoals de rol en functie, zonder dat dit dubbel gemodelleerd is. Een voorbeeld hiervan is dat een sluis niet alleen een kunstwerk is, maar ook een waterkerende functie heeft binnen de context van waterveiligheid.</p>
+  <p>Kunstwerken heeft ook betrekking op de elementen waaruit een kunstwerk kan bestaan. Hierdoor richt Kunstwerken zich dus ook op de decompositie van kunstwerken. Er is voor gekozen om de decomposities van de kunstwerken te beperken tot onderdelen die van belang zijn voor de werking en beoordeling van een kunstwerk vanuit het perspectief van waterbeheer, Een verdere decompositie, zoals bijvoorbeeld schroeven en scharnieren, wordt binnen andere standaarden zoals de NEN2767-4 vastgelegd.</p>
   </section> 
 
   <section id="modelleerbeslissingen">
@@ -23,19 +22,19 @@
       <section id='discussie'>
         <h2>Modelleerbeslissingen</h2>
 		<ul>
-			<li><strong>1. Modelleerbeslissing: </strong>Conform de NEN3610:2022 bevat IMWA kunstwerken een eigen object Kunstwerk die als specialisatie van het NEN3610:2022 object Kunstwerk is gemodelleerd. Dit betekent dat het IMWA object Kunstwerk alle eigenschappen deelt met het NEN3610:2022 object Kunstwerk, zoals attributen en de definitie.
-			<li><strong>2. Modelleerbeslissing: </strong>Binnen IMWA Kunstwerken is de keuze gemaakt om een beperkte decompositie van kunstwerken op te nemen. De onderdelen van kunstwerken die wij wel hebben opgenomen, zijn de onderdelen die van belang zijn in de gegevensuitwisseling. Voor het vastleggen van asset informatie bestaan al andere standaarden zoals de NEN2767-4 en IEC/ISO 81346 - Reference Designation System (RDS). Ook sluiten wij met de Aquo-standaard niet aan op deze standaarden, omdat er op dit moment geen duidelijk uitwisseldoel is voor deze informatie. Mocht dit in de toekomst voor een specifiek uitwisseldoel toch nodig zijn dan kan er naar de aansluitmogelijkheden worden gekeken.		
-		        <li><strong>3. Modelleerbeslissing: </strong>Op verzoek van gebruikers hebben wij een relatie gelegd tussen IMWA en IMGEO|BGT. De volgende relaties met een externe koppeling zijn gelegd tussen IMWA en IMGEO|BGT: Kunstwerk (IMWA) en functioneel gebied (IMGEO|BGT), kunstwerk element (IMWA) en Kunstwerkdeel (IMWA en IMGEO|BGT). IMWA en IMGEO|BGT zijn beide implementaties van de NEN3610 en staan op gelijk niveau.
+			<li><strong>1. </strong>IMWA bevat een eigen object Kunstwerk dat een specialisatie is van het NEN3610:2022 object Kunstwerk. Dit hoort zo gemodelleerd te worden. De specialisatie IMWA object Kunstwerk deelt daarmee alle eigenschappen met het NEN3610:2022 object Kunstwerk, zoals attributen en de definitie.
+			<li><strong>2. </strong>IMWA Kunstwerken bevat een beperkte decompositie die voldoende is voor de huidige uitwisseldoelen in het waterbeheer. Voor het vastleggen van asset informatie bestaan andere standaarden zoals de NEN2767-4 en IEC/ISO 81346 - Reference Designation System (RDS). De Aquo-standaard sluit hier nog niet op aan, omdat er op dit moment geen uitwisseldoel is voor deze informatie. Mocht dit in de toekomst nodig zijn dan kan dit worden aangevraagd bij de servicedesk van het Informatiehuis Water. 		
+		        <li><strong>3. </strong>Op verzoek van gebruikers hebben wij een relatie gelegd tussen IMWA en BGT|IMGeo . Het gaat om: kunstwerk (IMWA) en functioneel gebied (BGT|IMGEO) en kunstwerk element (IMWA) en Kunstwerkdeel (IMWA en BGT|IMGEO) 
+				
 		</ul>
       </section>
   </section>
   <section id="openstaand">
-      <h2>Toekomstig te behandelen acties</h2>
-	  <p>Naar aanleiding van de ontvangen feedback tijdens de publieke consultatie zijn er een aantal gebruikersvragen naar voren gekomen om bijvoorbeeld specifieke domeinen te herzien, objecten toe te voegen of andere specifieke wensen te verwerken in het model. Om deze gebruikersvragen goed uit te kunnen werken is meer informatie nodig. Deze gebruikersvragen zijn verzameld in een lijst met toekomstige acties. Deze toekomstige acties zullen worden uitgewerkt in samewerking met de desbetreffende experts en worden meegnomen in de volgende versie van IMWA Kunstwerken.
-	  <p>Om de gebruikersvragen goed uit te kunnen werken zullen er aparte uitvragen plaatsvinden. 
-	  <p>Heb je toevallig al een idee of een antwoord om één van de gebruikersvragen of wilt uitgenodigd worden om mee te praten over de onderstaande toekomstige acties? Stuur dan een bericht met je feedback of aanmelding naar servicedesk@ihw.nl
+      <h2>Nog uit te werken voor volgende versie</h2>
+	  <p>Tijdens de publieke consultatie zijn een aantal vragen gesteld waarvoor meer informatie nodig om deze uit te kunnen werken in het informatiemodel. Deze gebruikersvragen staan hieronder We willen deze in samenwerking met de waterbeheerders gaan uitwerken voor  de volgende versie van IMWA Kunstwerken. 
+	  <p>Heb je een idee over of een antwoord op één van deze gebruikersvragen, of wil je uitgenodigd worden om mee te praten? Stuur dan een bericht met je feedback of aanmelding naar servicedesk@ihw.nl.
 	  <section id="openstaand">
-           <h2>Toekomstige acties</h2>
+           <h2>Openstaande acties</h2>
 		<ul>
 			<li><strong>1. Toekomstige actie: </strong>Er is aangegeven er attributen missen bij duiker. Met de domeinexperts moet worden bepaald welke attributen nog moeten worden toegevoegd aan het Objecttype Duiker.
 			<li><strong>2. Toekomstige actie: </strong>Er is aangegeven dat het wenselijk is om duidelijk te kunnen maken bij het object Doostroomopening om wat voor opening het gaat. De vraag is op welke manier het wenselijk is om dit aan te geven. Er kan een attibuut worden toegevoegd met typeOpening plus een domeinlijst met bijvoorbeeld Hoofdopening en Nevenopening of een attribuut hoofdopening waar een ja/nee optie ingevuld kan worden.	
