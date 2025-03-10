@@ -10,7 +10,7 @@
     	<li>Of een het gaat om een objecttype, attribuut of gegevensgroep. </li>
     	<li>Bij attributen aangegeven bij welk(e) objecttype(n) deze horen.</li>
 	<li>De herkomst van het objecttype als deze dit uit ander extern informatiemodel is overgenomen.</li>
-	<li>De kardinaliteit van een attribuut. De kardinaliteit geeft aan hoe vaak het attribuut voor kan of moet komen. </li>
+	<li>De kardinaliteit van een attribuut.  </li>
 	<li>Als er een domeintabel gekoppeld is aan een attribuut, welke domeintabel is dit is. </li>
 </ul>
 </section>
@@ -23,7 +23,7 @@
 	<h3>Objectentypen en bijbehorende modelelementen</h3>
 <ul>
     <li><b>Objecttype:</b> voor het belangrijkste modelelement heeft vanuit verschillende perspectieven, verschillende benamingen: object, informatieobject, objecttype (MIM), entiteit of klasse (UML). Binnen IMWA hanteren wij de naam objecttype. Deze objecttypen representeren de objecten binnen het waterbeheer waarover wij gegevens uit wisselen. Een object heeft altijd een naam en een definitie. Deze staan beschreven in het objecttype van het model. In het model zijn de objecttypen te herkennen aan de term Objecttype. </li>
-    <li><b>Attribuut:</b> de eigenschappen die wij willen uitwisselen over een object worden als attributen vastgelegd binnen de objecttypen van het informatiemodel.  Domeintabellen zijn gekoppeld aan deze attributen. In het informatiemodel zijn de attributen te herkennen aan de term Attribuutsoort. </li>
+    <li><b>Attribuut:</b> de eigenschappen die wij willen uitwisselen over een object worden als attributen vastgelegd binnen de objecttypen van het informatiemodel.  Domeintabellen zijn gekoppeld aan deze attributen. In het informatiemodel zijn de attributen te herkennen aan de term Attribuutsoort. Bij attributen wordt ook de kardinaliteit aangegeven. Dit geeft aan hoe vaak het attribuut voor kan of moet komen. De kardinaliteit wordt alleen opgenomen wanneer die ongelijk is aan 1 (1 staat voor 'verplicht aanwezig'). </li>
     <li><b>Gegevensgroepen:</b> soms zijn een aantal attributen gegroepeerd in een groep, aangeduid als gegevensgroep. Deze attributen horen semantisch bij elkaar en worden als eenheid behandeld. Het blijven attributen van het objecttype, maar de inhoudelijke definiëring van de gegevensgroep staat elders als apart modelelement binnen het informatiemodel. Gegevensgroepen kunnen bij verschillende objecttypen hergebruikt worden als verschillende objecttypen dezelfde eigenschappen, die binnen een gegevensgroep gedefinieerd zijn, delen. </li>
 </ul>
 </section>
@@ -55,9 +55,7 @@
     <li><b>Measure</b> bestaat uit twee delen: een getalswaarde (rationaal getal) en een eenheid. In de huidige versie van het informatiemodel is de getalswaarde en eenheid niet verder gespecificeerd. Welke getalswaarde en eenheid gebruikt dienen te worden zijn afhankelijk van het concrete uitwisseldoel. Deze zullen verder worden uitgewerkt binnen de logische informatiemodellen.     </li>
     <li><b>Geometrie</b> gebruikt de geometrie-typen zoals die zijn beschreven in OpenGis Specificatie . In IMWA Kunstwerken komt het GM_Object veel voor. Een GM_Object kan een punt, lijn, vlak of complexere  vorm zijn. In het huidige conceptuele model is niet altijd gespecificeerd wel type geometrie gebruikt moet worden. Dit is ook weer afhankelijk van het specifieke uitwisseldoel. Deze zullen verder worden uitgewerkt binnen de logische informatiemodellen. </li>
   </ul>
-		<h4>Kardinaliteit</h4>
-              <p>De kardinaliteit geeft aan hoe vaak het attribuut voor kan of moet komen<p/>De kardinaliteit wordt alleen opgenomen wanneer die ongelijk is aan 1 (1 staat voor 'verplicht aanwezig'). </p>	
-	</ul>
+			
 </section><!--datatypen-->
 	<section id="domeinen">
 		<h4>Domeinentabellen</h4>
