@@ -18,29 +18,29 @@ De volgende aspecten van de gegevens worden vastgelegd:</p>
 
 <section id="introModel">
 <h2>Modelelementen</h2>
-<p>De modelelementen van een informatiemodel zijn de bouwstenen die samen de structuur en de functionaliteit van het model definiëren. Elk element speelt een specifieke rol in het beschrijven van hoe data wordt georganiseerd en beheerd binnen een systeem. Het model kent een aantal vaste elementen die bij ieder informatiemodel terugkomen. Een begrip van deze elementen vergroot de leesbaarheid van het informatiemodel en de catalogus. </p>
+<p>De modelelementen van een informatiemodel zijn de bouwstenen die samen de structuur, samenhang en functionaliteit van het model definiëren. Elk element speelt een specifieke rol in het beschrijven van hoe data en informatie worden georganiseerd. Het informatiemodel kent een aantal vaste elementen. In de onderstaande paragrafen worden deze elementen toegelicht. </p>
 	
 <section id='objecten'>
-	<h3>Objecten</h3>
+	<h3>Objectentypen en bijbehorende modelelementen</h3>
 <ul>
-    <li><b>Object</b> Voor het belangrijkste element zijn er vanuit verschillende perspectieven verschillende benamingen: object, informatieobject, objecttype (MIM), entiteit of klasse (UML). De concepten zijn in nuance verschillend, maar al deze concepten vertegenwoordigen een onderscheidend geheel van eigenschappen die gezamenlijk betekenis hebben. Een entiteit heeft altijd een naam en een definitie. In het model zijn de objecten te herkennen aan het begrip Objecttype.</li>
-    <li><b>Attribuut</b> Met attributen worden de eigenschappen of kenmerken van een object vastgelegd. In het domeinmodel zijn de attributen te herkennen aan het begrip Attribuutsoort.</li>
-    <li><b>Gegevensgroepen</b> Soms zijn een aantal attributen gegroepeerd in een groep, aangeduid als gegevensgroep. De attributen horen semantisch bij elkaar horen en worden als eenheid behandeld. Het blijven attributen van de entiteit, maar de inhoudelijke definiëring van de gegevensgroep staat elders. Gegevensgroepen kunnen bij meerdere entiteiten terugkomen. Als voorbeeld: het is een modelleerkeuze om de <i>afmetingen</i> van een fysiek object als gegevensgroep te modelleren. Afmeting bevat de attributen lengte, breedte, hoogte </li>
+    <li><b>Objecttype:</b> voor het belangrijkste modelelement heeft vanuit verschillende perspectieven, verschillende benamingen: object, informatieobject, objecttype (MIM), entiteit of klasse (UML). Binnen IMWA hanteren wij de naam objecttype. Deze objecttypen representeren de objecten binnen het waterbeheer waarover wij gegevens uit wisselen. Een object heeft altijd een naam en een definitie. Deze staan beschreven in het objecttype van het model. In het model zijn de objecttypen te herkennen aan de term Objecttype. </li>
+    <li><b>Attribuut:</b> de eigenschappen die wij willen uitwisselen over een object worden als attributen vastgelegd binnen de objecttypen van het informatiemodel.  Domeintabellen zijn gekoppeld aan deze attributen. In het informatiemodel zijn de attributen te herkennen aan de term Attribuutsoort. </li>
+    <li><b>Gegevensgroepen:</b> soms zijn een aantal attributen gegroepeerd in een groep, aangeduid als gegevensgroep. Deze attributen horen semantisch bij elkaar en worden als eenheid behandeld. Het blijven attributen van het objecttype, maar de inhoudelijke definiëring van de gegevensgroep staat elders als apart modelelement binnen het informatiemodel. Gegevensgroepen kunnen bij verschillende objecttypen hergebruikt worden als verschillende objecttypen dezelfde eigenschappen, die binnen een gegevensgroep gedefinieerd zijn, delen. </li>
 </ul>
 </section>
 
 
 <section id="relaties">
 	<h3>Relaties</h3>
-<p>Het model laat daarnaast ook zien hoe objecten aan elkaar gerelateerd zijn. Een relatie heeft altijd een richting en in de meeste gevallen loopt deze van bron naar doel. De meest voorkomende relatie in IMWA is de generalisatie. Daarnaast komt een enkele keer de associatierelatie voor. </p>
+<p>Het informatiemodel laat ook zien hoe objecten aan elkaar gerelateerd zijn. Een relatie heeft altijd een richting en in de meeste gevallen loopt deze van bron naar doel.  De meest voorkomende relatie in IMWA is de generalisatie. Daarnaast komt een enkele keer de associatierelatie voor, zie hieronder voor voorbeelden van beide relaties. </p>
   <p>
 <figure id='image002'>
 	<img src="./algemeen/Generalisatie en Associatie.jpg" alt="Relaties" width="600"/>
 	<figcaption>Voorbeeld van generalisatie- en associatierelatie.</figcaption>
 </figure>	  
-  <ul>  <li><b>Generalisatierelatie</b> Dit is een relatie waarbij een 'kind'-klasse (subklasse) is afgeleid van een 'ouder'-klasse (superklasse). Een generalisatierelatie geeft aan dat bepaalde eigenschappen van een object ook gelden voor de gerelateerde objecttypen, én dat deze qua betekenis, structuur en syntax gelijk zijn. Je kunt de relatie lezen als een 'is-een'-relatie.</li>
-  <li><b>Overerving</b> Dat bepaalde eigenschappen van een object ook gelden voor het gerelateerde object wordt overerving genoemd. In het voorbeeld overerft WaterstaatkundigeZonering alle attributen van IMWA-GeoObject. Het onderscheid tussen de twee zit hem in de extra attributen bij WaterstaatkundigeZonering.</li>
-  <li><b>Associatierelatie</b> Een associatierelatie beschrijft een verbinding tussen twee of meer klassen die een logisch verband of interactie vertegenwoordigt, zonder dat er sprake is van een inherente hiërarchie. </li>
+  <ul>  
+  <li><b>Generalisatie:</b> dit is een relatie waarbij een 'kind'-klasse (subklasse) is afgeleid van een 'ouder'-klasse (superklasse). Deze objecten zijn ook qua betekenis, structuur en syntax gelijk. Je kunt de relatie lezen als een 'is-een'-relatie. Een generalisatierelatie geeft ook aan dat bepaalde eigenschappen van een ‘ouder’-klasse ook gelden voor de gerelateerde ‘kind’-klassen (overerving). </li>
+  <li><b>Associatierelatie:</b> een associatierelatie beschrijft een verbinding tussen twee of meer klassen die een logisch verband of interactie vertegenwoordigt, zonder dat er sprake is van een inherente hiërarchie. </li>
   </ul>
 </p>
 </section>
