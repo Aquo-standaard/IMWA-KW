@@ -1,6 +1,9 @@
 var respecConfig = {
-  specStatus: "ED",
-  specType: "IM",
+  title: "Informatiemodel Water Kunstwerken",
+  specStatus: "REC",
+  specType: "standard",
+  previousPublishDate: "2024-12-01",
+  //previousMaturity: "WD",  Vorige status was "Working Draft"
   //subtitle: "IMWA Kunstwerken Gegevenscatalogus",
    //publishDate: "2023-04-26", 
   logos: [
@@ -22,6 +25,6 @@ var respecConfig = {
   pubDomain: "IMWA-Kunstwerken",
   github: "https://github.com/Aquo-standaard/IMWA-KW",
   previousPublishDate: "2023-04-26",
-  previousStatus: "AQ-WV",
+  previousStatus: "WD",
   localBiblio: {},
 };
