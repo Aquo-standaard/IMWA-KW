@@ -1,8 +1,6 @@
-# Informatiemodel Water
+# Informatiemodel Water (IMWA) Kunstwerken
 
-## Informatiemodel Water Kunstwerken
-
-Een van de thema’s in het informatiemodel water (IMWA) is het onderdeel Kunstwerken.
+Een van de domeinen of werkvelden in het informatiemodel water (IMWA) is het onderdeel Kunstwerken.
 
 Zie voor verdere toelichting van de samenhang tussen de verschillende domeinen in de IMWA bij IMWA Basis:  
 [Catalogus IMWA Basis](https://aquo-standaard.github.io/IMWA-basis/#cat)
@@ -15,9 +13,9 @@ Door deze nauwe relatie kan er wel iets worden gezegd over een kunstwerk binnen 
 
 Kunstwerken heeft ook betrekking op de elementen waaruit een kunstwerk kan bestaan. Hierdoor richt Kunstwerken zich dus ook op de decompositie van kunstwerken. Er is voor gekozen om de decomposities van de kunstwerken te beperken tot onderdelen die van belang zijn voor de werking en beoordeling van een kunstwerk vanuit het perspectief van waterbeheer. Een verdere decompositie, zoals bijvoorbeeld schroeven en scharnieren, wordt binnen andere standaarden zoals de NEN2767-4 vastgelegd.
 
-## Modelleerbeslissingen
+# Modelleerbeslissingen en openstaande acties
 
-### Modelleerbeslissingen
+## Modelleerbeslissingen
 
 1. **IMWA bevat een eigen object Kunstwerk** dat een specialisatie is van het NEN3610:2022 object Kunstwerk. Dit hoort zo gemodelleerd te worden. De specialisatie IMWA object Kunstwerk deelt daarmee alle eigenschappen met het NEN3610:2022 object Kunstwerk, zoals attributen en de definitie.
 2. **IMWA Kunstwerken bevat een beperkte decompositie** die voldoende is voor de huidige uitwisseldoelen in het waterbeheer. Voor het vastleggen van asset informatie bestaan andere standaarden zoals de NEN2767-4 en IEC/ISO 81346 - Reference Designation System (RDS). De Aquo-standaard sluit hier nog niet op aan, omdat er op dit moment geen uitwisseldoel is voor deze informatie. Mocht dit in de toekomst nodig zijn dan kan dit worden aangevraagd bij de servicedesk van het Informatiehuis Water.
@@ -25,13 +23,10 @@ Kunstwerken heeft ook betrekking op de elementen waaruit een kunstwerk kan besta
    - Kunstwerk (IMWA) en functioneel gebied (BGT|IMGEO)
    - Kunstwerk element (IMWA) en Kunstwerkdeel (IMWA en BGT|IMGEO)
 
-## Nog uit te werken voor volgende versie
-
+## Openstaande acties
 Tijdens de publieke consultatie zijn een aantal vragen gesteld waarvoor meer informatie nodig is om deze uit te kunnen werken in het informatiemodel. Deze gebruikersvragen staan hieronder. We willen deze in samenwerking met de waterbeheerders gaan uitwerken voor de volgende versie van IMWA Kunstwerken.
 
 Heb je een idee over of een antwoord op één van deze gebruikersvragen, of wil je uitgenodigd worden om mee te praten? Stuur dan een bericht met je feedback of aanmelding naar [servicedesk@ihw.nl](mailto:servicedesk@ihw.nl).
-
-### Openstaande acties
 
 1. Er ontbreken nog attributen bij duiker. Welke zijn dit?
 2. De wens is om aan te kunnen geven om wat voor opening het gaat bij het object Doorstroomopening. Op welke manier moet dit worden aangegeven?  
