@@ -40,11 +40,11 @@ let respecConfig = {
   previousMaturity: "vv",
   
   //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Aquo-standaard/IMWA-basis",
+  github: "https://github.com/Aquo-standaard/IMWA-KW",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
-  issueBase: "https://github.com/Aquo-standaard/IMWA-basis/issues",
+  issueBase: "https://github.com/Aquo-standaard/IMWA-KW/issues",
   //-- edDraftURI: de URI van de werkversie van het document
-  edDraftURI: "https://github.com/Aquo-standaard/IMWA-basis",
+  edDraftURI: "https://github.com/Aquo-standaard/IMWA-KW",
   //-- license: voor de geldende gebruiksvoorwaarden
 
   //-- Optionele parameters:
