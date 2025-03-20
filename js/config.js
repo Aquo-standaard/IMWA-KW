@@ -44,7 +44,7 @@ let respecConfig = {
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   issueBase: "https://github.com/Aquo-standaard/IMWA-KW/issues",
   //-- edDraftURI: de URI van de werkversie van het document
-  edDraftURI: "SIM-IMWA2024Kunstwerken-22.1-1-20231026-20231127-120928.html",
+  edDraftURI: "https://github.com/Aquo-standaard/IMWA-KW/Data/SIM-IMWA2024Kunstwerken-22.1-1-20231026-20231127-120928.html",
   //-- license: voor de geldende gebruiksvoorwaarden
 
   //-- Optionele parameters:
