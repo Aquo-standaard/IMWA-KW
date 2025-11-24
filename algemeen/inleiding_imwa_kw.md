@@ -1,9 +1,4 @@
-# Informatiemodel Water (IMWA) Kunstwerken
-
-Een van de domeinen of werkvelden in het informatiemodel water (IMWA) is het onderdeel Kunstwerken.
-
-Zie voor verdere toelichting van de samenhang tussen de verschillende domeinen in de IMWA bij IMWA Basis:  
-[Catalogus IMWA Basis](https://aquo-standaard.github.io/IMWA-basis/#cat)
+# IMWA Kunstwerken
 
 IMWA Kunstwerken beschrijft de fysieke objecten in de werkelijkheid en de bijbehorende fysieke eigenschappen. Oftewel, de werkelijke kunstwerken die zichtbaar en tastbaar zijn in het landschap met hun uiterlijke kenmerken zoals bijvoorbeeld het type en de afmeting.
 
@@ -12,8 +7,6 @@ Uiteraard is er meer relevante informatie om vast te leggen over een kunstwerk, 
 Door deze nauwe relatie kan er wel iets worden gezegd over een kunstwerk binnen een bepaalde context, zoals de rol en functie, zonder dat dit dubbel gemodelleerd is. Een voorbeeld hiervan is dat een sluis niet alleen een kunstwerk is, maar ook een waterkerende functie heeft binnen de context van waterveiligheid.
 
 Kunstwerken heeft ook betrekking op de elementen waaruit een kunstwerk kan bestaan. Hierdoor richt Kunstwerken zich dus ook op de decompositie van kunstwerken. Er is voor gekozen om de decomposities van de kunstwerken te beperken tot onderdelen die van belang zijn voor de werking en beoordeling van een kunstwerk vanuit het perspectief van waterbeheer. Een verdere decompositie, zoals bijvoorbeeld schroeven en scharnieren, wordt binnen andere standaarden zoals de NEN2767-4 vastgelegd.
-
-# Modelleerbeslissingen en openstaande acties
 
 ## Modelleerbeslissingen
 
